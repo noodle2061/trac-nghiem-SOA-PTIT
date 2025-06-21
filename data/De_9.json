@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "question_text": "Ví dụ nào dưới đây là không phải là 1 dịch vụ web đơn giản?",
+    "options": {
+      "A": "Xem thông tin thời tiết",
+      "B": "Lấy thông tin tỷ giá",
+      "C": "Lấy thông tin báo giá",
+      "D": "Kiểm tra sự sẵn có của một mặt hàng đã biết"
+    },
+    "correct_answer": "D",
+    "explanation": "Kiểm tra sự sẵn có của một mặt hàng đã biết thường liên quan đến các quy trình phức tạp hơn, không chỉ đơn thuần là lấy thông tin như các ví dụ còn lại."
+  },
+  {
+    "id": 2,
+    "question_text": "Vai trò nào trong SOA lưu trữ thông tin về các dịch vụ có sẵn và cung cấp thông tin này cho người tiêu dùng dịch vụ?",
+    "options": {
+      "A": "Service Provider",
+      "B": "Service Consumer",
+      "C": "Service Registry",
+      "D": "Service Requestor"
+    },
+    "correct_answer": "C",
+    "explanation": "Service Registry là nơi lưu trữ và cung cấp thông tin về các dịch vụ sẵn có cho các thành phần khác trong hệ thống SOA."
+  },
+  {
+    "id": 3,
+    "question_text": "SOA tập trung vào việc phân chia ứng dụng thành các đơn vị như thế nào?",
+    "options": {
+      "A": "Chức năng",
+      "B": "Dữ liệu",
+      "C": "Quy trình",
+      "D": "Tất cả các phương án trên"
+    },
+    "correct_answer": "D",
+    "explanation": "SOA hướng đến việc phân chia ứng dụng thành các dịch vụ dựa trên chức năng, dữ liệu và quy trình nghiệp vụ."
+  },
+  {
+    "id": 4,
+    "question_text": "Một trong những đặc điểm cơ bản phân biệt SOA/kiến trúc công nghệ hướng dịch vụ với các dạng kiến trúc phân tán khác là gì?",
+    "options": {
+      "A": "Tính tương thích (Compatibility)",
+      "B": "Tính linh hoạt (Flexibility)",
+      "C": "Tính tập trung vào thành phần (Component-centric)",
+      "D": "Tính phân tán (Decentralization)"
+    },
+    "correct_answer": "C",
+    "explanation": "SOA tập trung vào việc xây dựng các thành phần dịch vụ độc lập, có thể tái sử dụng, khác với các kiến trúc phân tán truyền thống."
+  },
+  {
+    "id": 5,
+    "question_text": "Mục đích chính của quá trình mô hình hóa dịch vụ trong kiến trúc dịch vụ (SOA) là gì?",
+    "options": {
+      "A": "Xác định quy trình kết hợp các dịch vụ thành một giải pháp hướng dịch vụ",
+      "B": "Xác định các yêu cầu và chức năng của các dịch vụ trong hệ thống",
+      "C": "Tổ chức một lượng lớn các đơn vị logic để cuối cùng chúng có thể được tập hợp lại thành các giải pháp hướng dịch vụ",
+      "D": "Xác định cấu trúc và quan hệ giữa các dịch vụ trong kiến trúc dịch vụ"
+    },
+    "correct_answer": "C",
+    "explanation": "Mục tiêu chính là tổ chức các đơn vị logic để dễ dàng kết hợp thành các giải pháp dịch vụ tổng thể."
+  },
+  {
+    "id": 6,
+    "question_text": "Dịch vụ loại nào chứa các chức năng cấp thấp liên quan đến công nghệ, như thông báo, ghi nhật ký và xử lý bảo mật?",
+    "options": {
+      "A": "Task service",
+      "B": "Microservice",
+      "C": "Entity service",
+      "D": "Utility service"
+    },
+    "correct_answer": "D",
+    "explanation": "Utility service cung cấp các chức năng hỗ trợ, không gắn với nghiệp vụ cụ thể mà phục vụ cho các dịch vụ khác."
+  },
+  {
+    "id": 7,
+    "question_text": "Yếu tố nào sau đây là một trong những cân nhắc điển hình khi quyết định đóng gói một logic trong kinh doanh thành một microservice riêng biệt?",
+    "options": {
+      "A": "Tính tự chủ cao hơn",
+      "B": "Thiết kế giao diện người dùng",
+      "C": "Phát triển và bảo trì mã nguồn dễ dàng",
+      "D": "Tích hợp với các đối tác bên ngoài"
+    },
+    "correct_answer": "A",
+    "explanation": "Microservice nên được thiết kế để tự chủ, độc lập với các dịch vụ khác, giúp dễ mở rộng và bảo trì."
+  },
+  {
+    "id": 8,
+    "question_text": "Những hành động nào bị coi là cần loại bỏ trong quy trình mô hình hóa REST Service?",
+    "options": {
+      "A": "Các hoạt động có sự tham gia của con người",
+      "B": "Các hoạt động có sự tham gia của con người và những logic nghiệp vụ cũ không thể đóng gói vào trong dịch vụ",
+      "C": "Các hoạt động là những logic nghiệp vụ cũ không thể đóng gói vào trong dịch vụ",
+      "D": "Đáp án khác"
+    },
+    "correct_answer": "B",
+    "explanation": "Các hoạt động cần loại bỏ là những hoạt động không thể tự động hóa hoặc không đóng gói được thành dịch vụ."
+  },
+  {
+    "id": 9,
+    "question_text": "Task Service đóng vai trò gì trong các hệ thống hướng dịch vụ?",
+    "options": {
+      "A": "Quản lý các thực thể dữ liệu trong cơ sở dữ liệu",
+      "B": "Điều phối và quản lý các quy trình kinh doanh phức tạp",
+      "C": "Cung cấp các chức năng tiện ích độc lập",
+      "D": "Xác định các quan hệ giữa các dịch vụ thực thể"
+    },
+    "correct_answer": "B",
+    "explanation": "Task Service thường dùng để điều phối, quản lý các quy trình nghiệp vụ phức tạp dựa trên nhiều dịch vụ nhỏ hơn."
+  },
+  {
+    "id": 10,
+    "question_text": "Mô hình nào được áp dụng khi cần quản lý trạng thái trong các dịch vụ nhiệm vụ để hỗ trợ nguyên tắc Stateless Service?",
+    "options": {
+      "A": "Tất cả các phương án còn lại",
+      "B": "State Repository",
+      "C": "Partial State Deferral",
+      "D": "State Messaging"
+    },
+    "correct_answer": "A",
+    "explanation": "Các mô hình này đều có thể được sử dụng để quản lý trạng thái mà không làm vi phạm nguyên tắc stateless."
+  },
+  {
+    "id": 11,
+    "question_text": "Tại sao việc đặt tên tiêu chuẩn cho dịch vụ và năng lực dịch vụ là quan trọng?",
+    "options": {
+      "A": "Giúp dịch vụ dễ dàng khám phá và sử dụng lại",
+      "B": "Tăng tốc độ triển khai",
+      "C": "Dễ dàng bảo trì",
+      "D": "Giảm thiểu lỗi"
+    },
+    "correct_answer": "A",
+    "explanation": "Tên tiêu chuẩn giúp các dịch vụ dễ dàng được phát hiện và tái sử dụng trong các hệ thống khác nhau."
+  },
+  {
+    "id": 12,
+    "question_text": "Mối quan hệ giữa data granularity và số lượng dữ liệu được xử lý là gì?",
+    "options": {
+      "A": "Càng chi tiết data granularity, thì càng ít dữ liệu được xử lý",
+      "B": "Càng đơn giản data granularity, thì càng ít dữ liệu được xử lý",
+      "C": "Data granularity không ảnh hưởng đến số lượng dữ liệu được xử lý",
+      "D": "Data granularity không liên quan đến lượng dữ liệu"
+    },
+    "correct_answer": "A",
+    "explanation": "Khi mức độ chi tiết của dữ liệu cao (granularity nhỏ), lượng dữ liệu xử lý trong mỗi lần giao dịch sẽ ít hơn."
+  },
+  {
+    "id": 13,
+    "question_text": "Which service pattern supports observability in distributed systems?",
+    "options": {
+      "A": "Orchestration",
+      "B": "Tracing",
+      "C": "Logging only",
+      "D": "Database sharding"
+    },
+    "correct_answer": "B",
+    "explanation": "Tracing giúp quan sát, theo dõi luồng yêu cầu qua nhiều dịch vụ trong hệ thống phân tán."
+  },
+  {
+    "id": 14,
+    "question_text": "Which technology is often used for real-time streaming between services?",
+    "options": {
+      "A": "Redis",
+      "B": "Kafka",
+      "C": "PostgreSQL",
+      "D": "gRPC"
+    },
+    "correct_answer": "B",
+    "explanation": "Kafka là nền tảng phổ biến cho việc truyền tải dữ liệu thời gian thực giữa các dịch vụ."
+  },
+  {
+    "id": 15,
+    "question_text": "What does the Domain Event pattern facilitate?",
+    "options": {
+      "A": "Immediate data consistency",
+      "B": "Long-running transactions",
+      "C": "Loose coupling between services",
+      "D": "UI responsiveness"
+    },
+    "correct_answer": "C",
+    "explanation": "Domain Event giúp các dịch vụ giảm sự phụ thuộc lẫn nhau, tăng tính loosely coupled."
+  },
+  {
+    "id": 16,
+    "question_text": "What does the transaction script pattern typically use?",
+    "options": {
+      "A": "Object references",
+      "B": "Flat procedures",
+      "C": "Event-driven architecture",
+      "D": "Command-query separation"
+    },
+    "correct_answer": "B",
+    "explanation": "Transaction Script thường sử dụng các thủ tục phẳng, mỗi thủ tục xử lý một giao dịch nghiệp vụ."
+  },
+  {
+    "id": 17,
+    "question_text": "Why is fault isolation important in microservices?",
+    "options": {
+      "A": "To ensure faster UI rendering",
+      "B": "To enable service-level scaling",
+      "C": "To prevent a single failure from cascading",
+      "D": "To allow reuse of logic"
+    },
+    "correct_answer": "C",
+    "explanation": "Fault isolation giúp ngăn chặn lỗi lan rộng từ một microservice sang các microservice khác."
+  },
+  {
+    "id": 18,
+    "question_text": "What is a characteristic of a well-designed microservice?",
+    "options": {
+      "A": "High interdependency",
+      "B": "Shared persistent storage",
+      "C": "Encapsulation of business capabilities",
+      "D": "Monolithic design"
+    },
+    "correct_answer": "C",
+    "explanation": "Microservice tốt sẽ đóng gói trọn vẹn một năng lực nghiệp vụ, không phụ thuộc vào các dịch vụ khác."
+  },
+  {
+    "id": 19,
+    "question_text": "Which method helps to control traffic flow during progressive delivery?",
+    "options": {
+      "A": "Webhooks",
+      "B": "Feature flags",
+      "C": "Service mesh",
+      "D": "Sidecar pattern"
+    },
+    "correct_answer": "C",
+    "explanation": "Service mesh là một lớp hạ tầng chuyên biệt giúp kiểm soát chi tiết luồng traffic giữa các dịch vụ trong hệ thống, đặc biệt hữu ích cho các chiến lược progressive delivery như canary hoặc blue/green deployment. Service mesh cung cấp các tính năng như chia nhỏ traffic, chuyển hướng traffic theo phần trăm, phân đoạn người dùng, theo dõi và tự động hóa việc chuyển đổi giữa các phiên bản dịch vụ mới/cũ, từ đó kiểm soát rủi ro khi triển khai tính năng mới đến từng nhóm người dùng. Feature flags cũng là một công cụ phổ biến để bật/tắt tính năng theo nhóm người dùng nhưng không trực tiếp kiểm soát traffic giữa các bản triển khai dịch vụ như service mesh. Các đáp án khác (webhooks, sidecar pattern) không phải là phương pháp chính để kiểm soát traffic flow trong progressive delivery."
+  },
+  {
+    "id": 20,
+    "question_text": "How does a canary release strategy reduce risk during deployment?",
+    "options": {
+      "A": "It deploys to all servers at once",
+      "B": "It updates only the configuration",
+      "C": "It releases to a small group first",
+      "D": "It skips integration testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Canary release chỉ triển khai cho một nhóm nhỏ người dùng trước, giúp phát hiện lỗi sớm và giảm rủi ro."
+  },
+  {
+    "id": 21,
+    "question_text": "Why is immutability important in event sourcing?",
+    "options": {
+      "A": "It reduces memory consumption",
+      "B": "It avoids concurrency issues and ensures auditability",
+      "C": "It allows event deletion when necessary",
+      "D": "It simplifies UI rendering"
+    },
+    "correct_answer": "B",
+    "explanation": "Không thay đổi (immutability) giúp tránh xung đột khi nhiều luồng truy cập và đảm bảo khả năng kiểm tra lại lịch sử."
+  },
+  {
+    "id": 22,
+    "question_text": "How is current application state typically derived in event sourcing?",
+    "options": {
+      "A": "From direct writes to database state",
+      "B": "By aggregating current logs",
+      "C": "By replaying past events from an event store",
+      "D": "Using cached values only"
+    },
+    "correct_answer": "C",
+    "explanation": "Trạng thái hiện tại được xây dựng lại bằng cách phát lại các sự kiện đã lưu trong event store."
+  },
+  {
+    "id": 23,
+    "question_text": "Which type of network connection is generally available to clients within the firewall?",
+    "options": {
+      "A": "Bluetooth",
+      "B": "LAN",
+      "C": "Mobile 5G",
+      "D": "Satellite"
+    },
+    "correct_answer": "B",
+    "explanation": "LAN là kết nối phổ biến nhất cho các máy khách nằm trong tường lửa nội bộ."
+  },
+  {
+    "id": 24,
+    "question_text": "How can a gateway handle varied client needs efficiently?",
+    "options": {
+      "A": "Through DNS switching",
+      "B": "By rejecting requests not from mobile",
+      "C": "Using backend for frontends or GraphQL",
+      "D": "Using token refresh only"
+    },
+    "correct_answer": "C",
+    "explanation": "Backend for frontends hoặc GraphQL giúp cổng dịch vụ trả về dữ liệu phù hợp với từng loại client khác nhau."
+  },
+  {
+    "id": 25,
+    "question_text": "What is a common drawback of tightly coupled service communication?",
+    "options": {
+      "A": "Improved fault tolerance",
+      "B": "Increased system observability",
+      "C": "Reduced deployment flexibility",
+      "D": "Faster communication"
+    },
+    "correct_answer": "C",
+    "explanation": "Giao tiếp chặt chẽ làm giảm tính linh hoạt khi triển khai, bảo trì hệ thống."
+  },
+  {
+    "id": 26,
+    "question_text": "Which messaging pattern is most suitable for broadcasting events to multiple services?",
+    "options": {
+      "A": "Request-Reply",
+      "B": "Command",
+      "C": "Publish-Subscribe",
+      "D": "Point-to-Point"
+    },
+    "correct_answer": "C",
+    "explanation": "Publish-Subscribe cho phép gửi thông báo đến nhiều dịch vụ cùng lúc."
+  },
+  {
+    "id": 27,
+    "question_text": "What is the role of a projection in the query side of a CQRS system?",
+    "options": {
+      "A": "To transform events into commands",
+      "B": "To synchronize commands with queries",
+      "C": "To build and update read models from events",
+      "D": "To secure service endpoints"
+    },
+    "correct_answer": "C",
+    "explanation": "Projection tạo và cập nhật các mô hình đọc từ các sự kiện đã xảy ra."
+  },
+  {
+    "id": 28,
+    "question_text": "What is a key benefit of using materialized views in query processing?",
+    "options": {
+      "A": "They reduce write latency",
+      "B": "They support asynchronous communication",
+      "C": "They improve performance by precomputing results",
+      "D": "They manage user sessions"
+    },
+    "correct_answer": "C",
+    "explanation": "Materialized view giúp tăng hiệu suất truy vấn nhờ tính toán trước kết quả."
+  },
+  {
+    "id": 29,
+    "question_text": "Which of the following best describes a SAGA pattern in microservices?",
+    "options": {
+      "A": "A way to encrypt transactions",
+      "B": "A distributed sequence of local transactions with compensations",
+      "C": "A batch transaction handler",
+      "D": "A fallback mechanism for HTTP errors"
+    },
+    "correct_answer": "B",
+    "explanation": "SAGA là chuỗi các giao dịch cục bộ, có thể bù trừ nếu một bước thất bại."
+  },
+  {
+    "id": 30,
+    "question_text": "Which coordination model is more scalable in distributed transactions?",
+    "options": {
+      "A": "Two-Phase Commit",
+      "B": "Compensating Transactions",
+      "C": "Shared Database Model",
+      "D": "Direct HTTP Requests"
+    },
+    "correct_answer": "B",
+    "explanation": "Compensating Transactions (bù trừ) giúp hệ thống phân tán mở rộng tốt hơn so với xác nhận hai pha."
+  },
+  {
+    "id": 31,
+    "question_text": "Dịch vụ dựa trên SOAP hay REST nhanh hơn?",
+    "options": {
+      "A": "SOAP",
+      "B": "REST",
+      "C": "Tùy thuộc vào cách triển khai",
+      "D": "SOAP và REST có cùng tốc độ"
+    },
+    "correct_answer": "B",
+    "explanation": "REST thường nhanh hơn do nhẹ hơn và không yêu cầu nhiều overhead như SOAP."
+  },
+  {
+    "id": 32,
+    "question_text": "Nhược điểm chính của việc sử dụng REST là gì?",
+    "options": {
+      "A": "Không dễ phát triển như SOAP",
+      "B": "Không an toàn như SOAP",
+      "C": "Không phải là một giao thức tiêu chuẩn",
+      "D": "Không hiệu quả như SOAP"
+    },
+    "correct_answer": "C",
+    "explanation": "REST là một phong cách kiến trúc, không phải là giao thức tiêu chuẩn như SOAP."
+  },
+  {
+    "id": 36,
+    "question_text": "Trong WSDL, phần service dùng để làm gì?",
+    "options": {
+      "A": "Mô tả cách truy cập và sử dụng các phương thức của web service",
+      "B": "Chứa các tài nguyên của web service",
+      "C": "Chứa các thư viện lập trình",
+      "D": "Chứa các tài liệu hướng dẫn"
+    },
+    "correct_answer": "A",
+    "explanation": "Phần service trong WSDL mô tả cách truy cập và sử dụng các phương thức của web service."
+  },
+  {
+    "id": 37,
+    "question_text": "Phần tử nào trong WSDL định nghĩa các kiểu dữ liệu sử dụng trong phương thức?",
+    "options": {
+      "A": "input",
+      "B": "output",
+      "C": "types",
+      "D": "operation"
+    },
+    "correct_answer": "C",
+    "explanation": "Phần tử types định nghĩa các kiểu dữ liệu dùng trong các phương thức của web service."
+  },
+  {
+    "id": 38,
+    "question_text": "Đâu là phương thức mà dịch vụ cung cấp theo định nghĩa WSDL?",
+    "options": {
+      "A": "Register",
+      "B": "AccountRegistrationPortType",
+      "C": "RegisterAccount",
+      "D": "AccountRegistrationService"
+    },
+    "correct_answer": "C",
+    "explanation": "Trong WSDL, phương thức (operation) dịch vụ cung cấp là RegisterAccount."
+  },
+  {
+    "id": 39,
+    "question_text": "Tên phần tử đại diện cho kết quả của giao dịch nạp tiền trong tệp WSDL là gì?",
+    "options": {
+      "A": "ChargeResponse",
+      "B": "ChargeResult",
+      "C": "ChargeData",
+      "D": "ChargeDetails"
+    },
+    "correct_answer": "B",
+    "explanation": "ChargeResult là phần tử chứa kết quả giao dịch nạp tiền, gồm trạng thái và thông điệp trả về."
+  },
+  {
+    "id": 40,
+    "question_text": "Trong định nghĩa WSDL, phần tử nào mô tả trạng thái của giao dịch nạp tiền và thông điệp kèm theo?",
+    "options": {
+      "A": "Thông báo mô tả trạng thái của giao dịch nạp tiền",
+      "B": "Trạng thái của giao dịch nạp tiền và thông điệp kèm theo",
+      "C": "Mã khách hàng và số tiền đã nạp",
+      "D": "Mã khách hàng, tên khách hàng, số tiền đã nạp và số thẻ tín dụng"
+    },
+    "correct_answer": "B",
+    "explanation": "Phần tử ChargeResult chứa cả trạng thái giao dịch và thông điệp liên quan, phản ánh kết quả của giao dịch nạp tiền."
+  }
+]

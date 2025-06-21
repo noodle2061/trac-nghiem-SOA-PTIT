@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "question_text": "Dịch vụ web \"Lấy thông tin thời tiết\" thường có có độ mịn cao hay thấp?",
+    "options": {
+      "A": "Cao",
+      "B": "Thấp",
+      "C": "Trung bình",
+      "D": "Không xác định"
+    },
+    "correct_answer": "A",
+    "explanation": "Dịch vụ web lấy thông tin thời tiết hiện đại thường cung cấp dữ liệu rất chi tiết theo từng khu vực nhỏ và từng khoảng thời gian ngắn (theo giờ, theo phút), do đó có độ mịn (granularity) cao. Điều này giúp đáp ứng nhu cầu dự báo chính xác cho từng vị trí và từng thời điểm cụ thể."
+  },
+  {
+    "id": 2,
+    "question_text": "Loose coupling trong dịch vụ web là gì?",
+    "options": {
+      "A": "Các thành phần của dịch vụ web hoạt động độc lập với nhau",
+      "B": "Các thành phần của dịch vụ web ít phụ thuộc vào nhau",
+      "C": "Các thành phần của dịch vụ web phụ thuộc chặt chẽ với nhau",
+      "D": "Các thành phần của dịch vụ web được triển khai trên nhiều máy chủ khác nhau"
+    },
+    "correct_answer": "B",
+    "explanation": "Loose coupling (liên kết lỏng lẻo) là nguyên tắc thiết kế giúp các thành phần trong hệ thống ít phụ thuộc vào nhau, từ đó tăng khả năng mở rộng, bảo trì và thay thế từng thành phần mà không ảnh hưởng đến toàn bộ hệ thống."
+  },
+  {
+    "id": 3,
+    "question_text": "Khi nào nên sử dụng dịch vụ fine-grained?",
+    "options": {
+      "A": "Khi cần cung cấp các chức năng có phạm vi hạn chế",
+      "B": "Khi cần cung cấp các chức năng tổng quát và phổ biến",
+      "C": "Khi cần cung cấp các chức năng rộng lớn và mạnh mẽ",
+      "D": "Khi cần cung cấp các chức năng cụ thể và linh hoạt"
+    },
+    "correct_answer": "A",
+    "explanation": "Fine-grained service là dịch vụ có phạm vi nhỏ, thực hiện một chức năng cụ thể. Nên sử dụng khi cần xây dựng các chức năng nhỏ, chi tiết, dễ tái sử dụng."
+  },
+  {
+    "id": 4,
+    "question_text": "Dịch vụ tiện ích là gì?",
+    "options": {
+      "A": "Dịch vụ có thể tái sử dụng với bối cảnh chức năng bất khả tri, không được bắt nguồn từ các mô hình và mô hình phân tích kinh doanh",
+      "B": "Dịch vụ có thể tái sử dụng với bối cảnh chức năng khả tri, không được bắt nguồn từ các mô hình và mô hình phân tích kinh doanh",
+      "C": "Dịch vụ có thể tái sử dụng với bối cảnh chức năng bất khả tri, bắt nguồn từ các mô hình và mô hình phân tích kinh doanh",
+      "D": "Dịch vụ có thể tái sử dụng với bối cảnh chức năng khả tri, bắt nguồn từ các mô hình và mô hình phân tích kinh doanh"
+    },
+    "correct_answer": "A",
+    "explanation": "Dịch vụ tiện ích (utility service) là dịch vụ kỹ thuật chung, không gắn với quy trình nghiệp vụ cụ thể, có thể tái sử dụng trong nhiều ngữ cảnh khác nhau."
+  },
+  {
+    "id": 5,
+    "question_text": "Chỉ ra các mô hình dịch vụ phổ biến?",
+    "options": {
+      "A": "Task service, Microservice, Management service, Utility service",
+      "B": "Task service, Microservice, Entity service, Utility service",
+      "C": "Task service, Microservice, Entity service, Identity service",
+      "D": "Routing service, Microservice, Entity service, Utility service"
+    },
+    "correct_answer": "B",
+    "explanation": "Bốn mô hình dịch vụ phổ biến là Task service, Microservice, Entity service, Utility service, thường gặp trong SOA và microservices."
+  },
+  {
+    "id": 6,
+    "question_text": "Một dịch vụ khi nào được coi là bất khả tri?",
+    "options": {
+      "A": "Chứa logic có khả năng tái sử dụng bởi nhiều quy trình nghiệp vụ",
+      "B": "Chức logic không thể tái sử dụng nhưng có thể có tiềm năng tái sử dụng trong giải pháp",
+      "C": "Khi nó có khả năng triển khai độc lập",
+      "D": "Chức các logic không thể tái sử dụng bởi các quy trình nghiệp vụ"
+    },
+    "correct_answer": "A",
+    "explanation": "Dịch vụ bất khả tri (agnostic service) là dịch vụ có logic đủ tổng quát để tái sử dụng trong nhiều quy trình nghiệp vụ khác nhau."
+  },
+  {
+    "id": 7,
+    "question_text": "Trong mô hình REST, đâu là phương pháp chính để tương tác với tài nguyên?",
+    "options": {
+      "A": "Gửi email",
+      "B": "Gửi yêu cầu URL",
+      "C": "Gửi yêu cầu DNS",
+      "D": "Gửi yêu cầu HTTP"
+    },
+    "correct_answer": "D",
+    "explanation": "REST sử dụng các yêu cầu HTTP (GET, POST, PUT, DELETE,...) để thao tác với tài nguyên trên server."
+  },
+  {
+    "id": 8,
+    "question_text": "Điều gì KHÔNG đúng khi nói về việc xác định các tài nguyên trong giai đoạn mô hình hóa dịch vụ?",
+    "options": {
+      "A": "Các tài nguyên có thể được biểu diễn bằng dấu gạch chéo làm dấu phân cách",
+      "B": "Các tài nguyên nên được giữ ở dạng đơn giản trong giai đoạn này",
+      "C": "Các tài nguyên xác định có thể không liên quan đến các thực thể kinh doanh đã biết",
+      "D": "Các tài nguyên cần phải tuân thủ hoàn toàn các tiêu chuẩn URL ngay từ đầu"
+    },
+    "correct_answer": "D",
+    "explanation": "Ở giai đoạn mô hình hóa, tài nguyên chưa cần tuân thủ hoàn toàn chuẩn URL, quan trọng là xác định đúng bản chất nghiệp vụ."
+  },
+  {
+    "id": 9,
+    "question_text": "Khi nào một non-agnostic logic có thể được đóng gói thành một microservice riêng biệt?",
+    "options": {
+      "A": "Khi logic hành động yêu cầu tăng cường tính tự chủ",
+      "B": "Khi logic hành động yêu cầu ít tài nguyên",
+      "C": "Khi logic hành động không có yêu cầu đặc biệt về hiệu suất",
+      "D": "Khi logic hành động không cần phiên bản hóa và triển khai riêng biệt"
+    },
+    "correct_answer": "A",
+    "explanation": "Non-agnostic logic nên được đóng gói thành microservice riêng khi cần sự tự chủ về xử lý hoặc triển khai."
+  },
+  {
+    "id": 10,
+    "question_text": "Điều gì cần cân nhắc khi thiết kế dịch vụ để đảm bảo tính nhất quán và chuẩn hóa?",
+    "options": {
+      "A": "Sử dụng kiểu dữ liệu riêng",
+      "B": "Giảm độ chi tiết của API",
+      "C": "Tăng số lượng thao tác",
+      "D": "Áp dụng các nguyên tắc hướng dịch vụ liên quan đến hợp đồng"
+    },
+    "correct_answer": "D",
+    "explanation": "Chuẩn hóa hợp đồng dịch vụ giúp đảm bảo tính nhất quán, dễ tích hợp và bảo trì hệ thống."
+  },
+  {
+    "id": 11,
+    "question_text": "Tại sao khi thiết kế các hoạt động của dịch vụ web hướng tới có thể mở rộng?",
+    "options": {
+      "A": "Để tăng hiệu suất xử lý dịch vụ web",
+      "B": "Để giảm độ phức tạp của dịch vụ web",
+      "C": "Để đáp ứng được yêu cầu mở rộng trong tương lai",
+      "D": "Để tạo sự linh hoạt trong quản lý dịch vụ web"
+    },
+    "correct_answer": "C",
+    "explanation": "Thiết kế dịch vụ web hướng tới khả năng mở rộng giúp hệ thống dễ dàng thích ứng với sự tăng trưởng về lượng người dùng, dữ liệu hoặc chức năng trong tương lai mà không phải thay đổi cấu trúc tổng thể."
+  },
+  {
+    "id": 12,
+    "question_text": "Kỹ thuật nào có thể được sử dụng để đảm bảo rằng phương thức POST trong dịch vụ tác vụ dựa trên REST hoạt động đáng tin cậy?",
+    "options": {
+      "A": "Chỉ sử dụng các phương thức HTTP khác như GET hoặc PUT",
+      "B": "Bao gồm các tiêu đề bổ sung và xử lý các thông báo phản hồi, hoặc sử dụng một mã định danh yêu cầu duy nhất do người dùng tạo ra trong mã định danh tài nguyên",
+      "C": "Tạo ra nhiều phiên bản của dịch vụ tác vụ để tăng độ tin cậy",
+      "D": "Sử dụng SOAP thay vì REST để truyền tải các thông điệp"
+    },
+    "correct_answer": "B",
+    "explanation": "Để đảm bảo POST hoạt động đáng tin cậy, có thể sử dụng idempotency key (mã định danh duy nhất) trong header để tránh xử lý trùng lặp khi client gửi lại request do lỗi mạng."
+  },
+  {
+    "id": 13,
+    "question_text": "Which pattern coordinates transactions that span across multiple services?",
+    "options": {
+      "A": "Service Mesh",
+      "B": "Circuit Breaker",
+      "C": "Saga",
+      "D": "Webhooks"
+    },
+    "correct_answer": "C",
+    "explanation": "Saga là mẫu thiết kế giúp điều phối các giao dịch phân tán qua nhiều dịch vụ bằng cách chia nhỏ thành các bước và sử dụng các giao dịch bù trừ khi có lỗi."
+  },
+  {
+    "id": 14,
+    "question_text": "What can be used to enable message persistence in asynchronous systems?",
+    "options": {
+      "A": "Load balancer",
+      "B": "Service discovery",
+      "C": "Message queue",
+      "D": "Circuit breaker"
+    },
+    "correct_answer": "C",
+    "explanation": "Message queue lưu trữ thông điệp cho đến khi được xử lý, đảm bảo không mất dữ liệu trong các hệ thống bất đồng bộ."
+  },
+  {
+    "id": 15,
+    "question_text": "Which pattern is primarily used in the FTGO application's business logic?",
+    "options": {
+      "A": "Procedural script",
+      "B": "Transaction script",
+      "C": "Domain model",
+      "D": "Saga"
+    },
+    "correct_answer": "C",
+    "explanation": "FTGO sử dụng domain model để hiện thực logic nghiệp vụ, giúp hệ thống linh hoạt và dễ mở rộng."
+  },
+  {
+    "id": 16,
+    "question_text": "Why is it challenging to develop business logic in microservices?",
+    "options": {
+      "A": "UI requirements change frequently",
+      "B": "Logic must span service boundaries and ensure consistency",
+      "C": "Developers prefer monoliths",
+      "D": "Testing is easier"
+    },
+    "correct_answer": "B",
+    "explanation": "Trong microservices, logic nghiệp vụ thường phải phối hợp qua nhiều dịch vụ, gây khó khăn trong việc đảm bảo tính nhất quán dữ liệu và xử lý lỗi."
+  },
+  {
+    "id": 17,
+    "question_text": "Which method best helps monitor distributed microservices?",
+    "options": {
+      "A": "Spreadsheets",
+      "B": "System.out.println logs",
+      "C": "Centralized logging and tracing",
+      "D": "Manual inspection"
+    },
+    "correct_answer": "C",
+    "explanation": "Centralized logging và distributed tracing giúp theo dõi, phân tích và phát hiện lỗi hiệu quả trong hệ thống microservices phân tán."
+  },
+  {
+    "id": 18,
+    "question_text": "Why is fault isolation important in microservices?",
+    "options": {
+      "A": "To ensure faster UI rendering",
+      "B": "To enable service-level scaling",
+      "C": "To prevent a single failure from cascading",
+      "D": "To allow reuse of logic"
+    },
+    "correct_answer": "C",
+    "explanation": "Fault isolation giúp đảm bảo khi một dịch vụ gặp sự cố, lỗi sẽ không lan sang các dịch vụ khác, bảo vệ tính ổn định toàn hệ thống."
+  },
+  {
+    "id": 19,
+    "question_text": "In Kubernetes, what mechanism can automatically roll back a failed deployment?",
+    "options": {
+      "A": "Pod eviction",
+      "B": "Horizontal scaling",
+      "C": "Liveness probe",
+      "D": "Deployment controller"
+    },
+    "correct_answer": "D",
+    "explanation": "Deployment controller trong Kubernetes có thể tự động rollback về phiên bản ổn định trước đó nếu phát hiện deployment mới bị lỗi."
+  },
+  {
+    "id": 20,
+    "question_text": "In a microservices environment, what does 'immutable infrastructure' imply?",
+    "options": {
+      "A": "Infrastructure cannot be resized",
+      "B": "Infrastructure is updated in-place",
+      "C": "Infrastructure is replaced rather than changed",
+      "D": "Infrastructure is read-only"
+    },
+    "correct_answer": "C",
+    "explanation": "Immutable infrastructure nghĩa là thay vì cập nhật trực tiếp, hệ thống sẽ tạo mới và thay thế hoàn toàn các thành phần hạ tầng khi cần cập nhật, giúp đảm bảo tính nhất quán và dễ rollback."
+  },
+  {
+    "id": 21,
+    "question_text": "How is current application state typically derived in event sourcing?",
+    "options": {
+      "A": "From direct writes to database state",
+      "B": "By aggregating current logs",
+      "C": "By replaying past events from an event store",
+      "D": "Using cached values only"
+    },
+    "correct_answer": "C",
+    "explanation": "Trong event sourcing, trạng thái hiện tại của ứng dụng được xây dựng lại bằng cách phát lại (replay) tất cả các sự kiện đã lưu trong event store, thay vì lấy trực tiếp từ database."
+  },
+  {
+    "id": 22,
+    "question_text": "What challenge is commonly associated with event sourcing?",
+    "options": {
+      "A": "Fast writes to the database",
+      "B": "Scaling read operations",
+      "C": "Keeping events small in size",
+      "D": "Rebuilding state after many events"
+    },
+    "correct_answer": "D",
+    "explanation": "Một thách thức lớn của event sourcing là việc tái tạo lại trạng thái khi số lượng sự kiện lớn, quá trình này có thể tốn thời gian và tài nguyên."
+  },
+  {
+    "id": 23,
+    "question_text": "Which type of network connection is generally available to clients within the firewall?",
+    "options": {
+      "A": "Bluetooth",
+      "B": "LAN",
+      "C": "Mobile 5G",
+      "D": "Satellite"
+    },
+    "correct_answer": "B",
+    "explanation": "LAN (Local Area Network) là loại kết nối mạng phổ biến nhất cho các client nằm trong cùng firewall của doanh nghiệp."
+  },
+  {
+    "id": 24,
+    "question_text": "What is the challenge with having a one-size-fits-all API in microservices?",
+    "options": {
+      "A": "It is always slower than direct DB queries",
+      "B": "It requires GraphQL",
+      "C": "Different clients have different data needs and network constraints",
+      "D": "It reduces reusability of services"
+    },
+    "correct_answer": "C",
+    "explanation": "Một API \"một cho tất cả\" sẽ không tối ưu vì mỗi loại client (web, mobile, IoT...) có nhu cầu dữ liệu và giới hạn mạng khác nhau."
+  },
+  {
+    "id": 25,
+    "question_text": "Which HTTP status code often indicates a downstream service is unavailable?",
+    "options": {
+      "A": "200",
+      "B": "404",
+      "C": "503",
+      "D": "301"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP 503 Service Unavailable được sử dụng khi dịch vụ phía dưới (downstream service) không khả dụng hoặc đang quá tải."
+  },
+  {
+    "id": 26,
+    "question_text": "Which service pattern supports observability in distributed systems?",
+    "options": {
+      "A": "Orchestration",
+      "B": "Tracing",
+      "C": "Logging only",
+      "D": "Database sharding"
+    },
+    "correct_answer": "B",
+    "explanation": "Tracing (theo dõi phân tán) giúp quan sát luồng xử lý qua nhiều dịch vụ, hỗ trợ phân tích lỗi và hiệu suất trong hệ thống phân tán."
+  },
+  {
+    "id": 27,
+    "question_text": "What is the primary responsibility of the Query side in a microservices architecture?",
+    "options": {
+      "A": "To handle incoming commands and update data",
+      "B": "To listen for domain events and update read models",
+      "C": "To manage authentication and authorization",
+      "D": "To generate API documentation"
+    },
+    "correct_answer": "B",
+    "explanation": "Trong kiến trúc CQRS, phía Query chịu trách nhiệm lắng nghe các domain event và cập nhật các mô hình đọc (read models) để phục vụ truy vấn."
+  },
+  {
+    "id": 28,
+    "question_text": "How do eventual consistency models improve scalability?",
+    "options": {
+      "A": "By avoiding distributed data",
+      "B": "By using centralized databases",
+      "C": "By decoupling reads from writes and using asynchronous updates",
+      "D": "By executing joins across services"
+    },
+    "correct_answer": "C",
+    "explanation": "Mô hình eventual consistency giúp mở rộng hệ thống tốt hơn nhờ tách biệt xử lý ghi và đọc, cập nhật dữ liệu bất đồng bộ."
+  },
+  {
+    "id": 29,
+    "question_text": "In an e-commerce checkout using saga, if the payment step fails, what should happen?",
+    "options": {
+      "A": "Notify admin only",
+      "B": "Compensate previous steps like canceling order and restocking",
+      "C": "Retry indefinitely",
+      "D": "Send error log"
+    },
+    "correct_answer": "B",
+    "explanation": "Nếu bước thanh toán thất bại, Saga sẽ thực hiện các giao dịch bù trừ (compensating transactions) để hoàn tác các bước trước đó như hủy đơn hàng, hoàn lại hàng vào kho."
+  },
+  {
+    "id": 30,
+    "question_text": "In orchestration-based saga, which component triggers and monitors the steps?",
+    "options": {
+      "A": "Service registry",
+      "B": "API Gateway",
+      "C": "Saga orchestrator",
+      "D": "Database monitor"
+    },
+    "correct_answer": "C",
+    "explanation": "Trong saga orchestration, Saga orchestrator chịu trách nhiệm kích hoạt, theo dõi và điều phối các bước trong chuỗi nghiệp vụ."
+  },
+  {
+    "id": 31,
+    "question_text": "Dịch vụ dựa trên RESTful hỗ trợ định dạng dữ liệu nào?",
+    "options": {
+      "A": "XML",
+      "B": "JSON",
+      "C": "YAML",
+      "D": "Cả 3 loại trên"
+    },
+    "correct_answer": "D",
+    "explanation": "RESTful web service có thể trả về hoặc nhận dữ liệu ở nhiều định dạng khác nhau như XML, JSON, YAML... tùy vào yêu cầu của client và khả năng hỗ trợ của server. Trong thực tế, JSON là phổ biến nhất nhưng REST không giới hạn ở một định dạng nào."
+  },
+  {
+    "id": 32,
+    "question_text": "Lợi ích chính của việc sử dụng dịch vụ web dựa trên REST là gì?",
+    "options": {
+      "A": "Dễ phát triển hơn SOAP",
+      "B": "Hiệu quả hơn SOAP",
+      "C": "An toàn hơn SOAP",
+      "D": "Đơn giản hơn SOAP"
+    },
+    "correct_answer": "D",
+    "explanation": "REST có kiến trúc đơn giản, dễ hiểu, dễ triển khai và tích hợp hơn so với SOAP, vì không cần các tiêu chuẩn phức tạp như WSDL, XML Schema, v.v."
+  },
+  {
+    "id": 36,
+    "question_text": "Trong WSDL, phần PortType dùng để làm gì?",
+    "options": {
+      "A": "Chứa các thông tin bổ sung về message",
+      "B": "Chứa thông tin về tài nguyên của web service",
+      "C": "Định nghĩa các phương thức và kiểu dữ liệu",
+      "D": "Chứa các thư viện lập trình"
+    },
+    "correct_answer": "C",
+    "explanation": "Phần PortType trong WSDL định nghĩa các thao tác (operation) mà dịch vụ cung cấp và kiểu dữ liệu liên quan, đóng vai trò như một interface cho dịch vụ web."
+  },
+  {
+    "id": 37,
+    "question_text": "Trong SOAP, các phương thức được định nghĩa trong phần nào của tài liệu WSDL?",
+    "options": {
+      "A": "Binding",
+      "B": "Service",
+      "C": "PortType",
+      "D": "Message"
+    },
+    "correct_answer": "C",
+    "explanation": "Các phương thức (operation) của SOAP service được định nghĩa trong phần PortType của tài liệu WSDL."
+  },
+  {
+    "id": 38,
+    "question_text": "Cho định nghĩa WSDL:\n<wsdl:definitions xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\"\n                  xmlns:tns=\"http://www.example.com/onlinecharging\"\n                  xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n                  xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"\n                  name=\"OnlineCharging\"\n                  targetNamespace=\"http://www.example.com/onlinecharging\">\n  <wsdl:types>\n   <xsd:schema elementFormDefault=\"qualified\" targetNamespace=\"http://www.example.com/onlinecharging\">\n      <xsd:element name=\"Customer\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"CustomerId\" type=\"xsd:string\" minOccurs=\"1\" />\n            <xsd:element name=\"CustomerName\" type=\"xsd:string\" minOccurs=\"1\" />\n          </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n      <xsd:element name=\"Charge\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"CustomerId\" type=\"xsd:string\" minOccurs=\"1\" />\n            <xsd:element name=\"Amount\" type=\"xsd:double\" minOccurs=\"1\" />\n          </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n      <xsd:element name=\"ChargeResult\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"Status\" type=\"xsd:string\" minOccurs=\"1\" />\n            <xsd:element name=\"Message\" type=\"xsd:string\" minOccurs=\"1\" />\n          </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n    </xsd:schema>\n  </wsdl:types>\n  ...\n</wsdl:definitions>\nĐâu không phải là một phần tử phức?",
+    "options": {
+      "A": "Customer",
+      "B": "CustomerId",
+      "C": "Charge",
+      "D": "ChargeResult"
+    },
+    "correct_answer": "B",
+    "explanation": "CustomerId là phần tử kiểu đơn giản (string), còn Customer, Charge, ChargeResult đều là phần tử phức tạp (complex type) vì có chứa nhiều trường con."
+  },
+  {
+    "id": 39,
+    "question_text": "Cho định nghĩa WSDL:\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<definitions xmlns=\"http://schemas.xmlsoap.org/wsdl/\"\n             xmlns:tns=\"http://www.example.com/accountRegistration\"\n             xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n             xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"\n             name=\"AccountRegistration\"\n             targetNamespace=\"http://www.example.com/accountRegistration\">\n  <types>\n    <xsd:schema elementFormDefault=\"qualified\" targetNamespace=\"http://www.example.com/accountRegistration\">\n      <xsd:element name=\"Account\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"username\" type=\"xsd:string\"/>\n            <xsd:element name=\"password\" type=\"xsd:string\"/>\n          </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n      <xsd:element name=\"AccountResponse\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"success\" type=\"xsd:boolean\"/>\n           </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n    </xsd:schema>\n  </types>\n  <message name=\"RegisterAccount\">\n    <part name=\"parameters\" element=\"tns:Account\"/>\n  </message>\n  <message name=\"RegisterAccountResponse\">\n    <part name=\"parameters\" element=\"tns:AccountResponse\"/>\n  </message>\n  <portType name=\"AccountRegistrationPortType\">\n    <operation name=\"RegisterAccount\">\n      <input message=\"tns:RegisterAccount\"/>\n      <output message=\"tns:RegisterAccountResponse\"/>\n    </operation>\n  </portType>\n  <binding name=\"AccountRegistrationBinding\" type=\"tns:AccountRegistrationPortType\">\n    <soap:binding transport=\"http://schemas.xmlsoap.org/soap/http\"/>\n    <operation name=\"RegisterAccount\">\n      <soap:operation soapAction=\"http://www.example.com/accountRegistration/RegisterAccount\"/>\n       <input>\n        <soap:body use=\"literal\"/>\n      </input>\n      <output>\n        <soap:body use=\"literal\"/>\n      </output>\n    </operation>\n  </binding>\n  <service name=\"AccountRegistrationService\">\n    <port name=\"AccountRegistrationPort\" binding=\"tns:AccountRegistrationBinding\">\n      <soap:address location=\"http://www.example.com/accountRegistration\"/>\n    </port>\n  </service>\n</definitions> \nDịch vụ web tên gì?",
+    "options": {
+      "A": "AccountRegistrationService",
+      "B": "AccountRegistration",
+      "C": "AccountRegistrationPortType",
+      "D": "AccountRegistrationBinding"
+    },
+    "correct_answer": "A",
+    "explanation": "Tên dịch vụ web được định nghĩa trong thẻ <service name=\"AccountRegistrationService\">."
+  },
+  {
+    "id": 40,
+    "question_text": "Cho định nghĩa WSDL:\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<definitions xmlns=\"http://schemas.xmlsoap.org/wsdl/\"\n             xmlns:tns=\"http://www.example.com/accountRegistration\"\n             xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n             xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"\n             name=\"AccountRegistration\"\n             targetNamespace=\"http://www.example.com/accountRegistration\">\n  <types>\n    <xsd:schema elementFormDefault=\"qualified\" targetNamespace=\"http://www.example.com/accountRegistration\">\n      <xsd:element name=\"Account\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"username\" type=\"xsd:string\"/>\n            <xsd:element name=\"password\" type=\"xsd:string\"/>\n          </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n      <xsd:element name=\"AccountResponse\">\n        <xsd:complexType>\n          <xsd:sequence>\n            <xsd:element name=\"success\" type=\"xsd:boolean\"/>\n           </xsd:sequence>\n        </xsd:complexType>\n      </xsd:element>\n    </xsd:schema>\n  </types>\n  <message name=\"RegisterAccount\">\n    <part name=\"parameters\" element=\"tns:Account\"/>\n  </message>\n  <message name=\"RegisterAccountResponse\">\n    <part name=\"parameters\" element=\"tns:AccountResponse\"/>\n  </message>\n  <portType name=\"AccountRegistrationPortType\">\n    <operation name=\"RegisterAccount\">\n      <input message=\"tns:RegisterAccount\"/>\n      <output message=\"tns:RegisterAccountResponse\"/>\n    </operation>\n  </portType>\n  <binding name=\"AccountRegistrationBinding\" type=\"tns:AccountRegistrationPortType\">\n    <soap:binding transport=\"http://schemas.xmlsoap.org/soap/http\"/>\n    <operation name=\"RegisterAccount\">\n      <soap:operation soapAction=\"http://www.example.com/accountRegistration/RegisterAccount\"/>\n       <input>\n        <soap:body use=\"literal\"/>\n      </input>\n      <output>\n        <soap:body use=\"literal\"/>\n      </output>\n    </operation>\n  </binding>\n  <service name=\"AccountRegistrationService\">\n    <port name=\"AccountRegistrationPort\" binding=\"tns:AccountRegistrationBinding\">\n      <soap:address location=\"http://www.example.com/accountRegistration\"/>\n    </port>\n  </service>\n</definitions>\nThông tin nào được yêu cầu khi gửi dữ liệu đến dịch vụ web?",
+    "options": {
+      "A": "Đầu vào: tên người dùng, mật khẩu, email, số điện thoại. Đầu ra: thành công",
+      "B": "Đầu vào: tên người dùng, mật khẩu, email. Đầu ra: thành công",
+      "C": "Đầu vào: tên người dùng, mật khẩu. Đầu ra: thành công",
+      "D": "Đầu vào: tên người dùng, mật khẩu, email, số điện thoại, địa chỉ. Đầu ra: thành công"
+    },
+    "correct_answer": "C",
+    "explanation": "Theo định nghĩa WSDL, phần tử Account chỉ gồm username và password; AccountResponse chỉ gồm trường success (thành công)."
+  }
+]

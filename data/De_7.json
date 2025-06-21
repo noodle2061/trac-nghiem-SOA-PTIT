@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "question_text": "Cái nào không phải là một thuộc tính phi chức năng của dịch vụ web?",
+    "options": {
+      "A": "Hiệu năng",
+      "B": "Bảo mật",
+      "C": "Độ tin cậy",
+      "D": "Linh hoạt"
+    },
+    "correct_answer": "D",
+    "explanation": "Hiệu năng, bảo mật, độ tin cậy đều là các thuộc tính phi chức năng điển hình của dịch vụ web.  Linh hoạt không phải là một thuộc tính phi chức năng chuẩn mà chỉ là kết quả của thiết kế hệ thống tốt. "
+  },
+  {
+    "id": 2,
+    "question_text": "Loose coupling trong dịch vụ web dựa trên tư tưởng nào sau đây?",
+    "options": {
+      "A": "Sự kết hợp chặt chẽ giữa giao diện người dùng và logic xử lý",
+      "B": "Sự tách biệt giữa giao diện người dùng và logic xử lý",
+      "C": "Sự tương tác trực tiếp giữa giao diện người dùng và logic xử lý",
+      "D": "Sự phụ thuộc mạnh vào giao diện người dùng"
+    },
+    "correct_answer": "B",
+    "explanation": "Loose coupling nhấn mạnh việc tách biệt giữa giao diện (interface) và logic xử lý (implementation), giúp các thành phần độc lập và dễ bảo trì. "
+  },
+  {
+    "id": 3,
+    "question_text": "Giao diện dịch vụ (service interface) đóng vai trò gì trong dịch vụ web?",
+    "options": {
+      "A": "Cung cấp thông tin về chức năng mà dịch vụ cung cấp",
+      "B": "Cung cấp thông tin về công nghệ xây dựng dịch vụ",
+      "C": "Cung cấp thông tin về giao thức để tương tác với dịch vụ",
+      "D": "Cung cấp thông tin về địa chỉ để gửi dữ liệu tới dịch vụ"
+    },
+    "correct_answer": "A",
+    "explanation": "Service interface mô tả các chức năng mà dịch vụ cung cấp cho bên ngoài, giúp các hệ thống khác biết được dịch vụ này có thể thực hiện những gì. "
+  },
+  {
+    "id": 4,
+    "question_text": "Điều kiện để một dịch vụ được coi là bất khả tri?",
+    "options": {
+      "A": "Chứa logic có khả năng tái sử dụng bởi nhiều quy trình kinh doanh",
+      "B": "Chứa logic được sử dụng trong một quy trình kinh doanh duy nhất",
+      "C": "Các chức năng được phát triển từ các thực thể",
+      "D": "Các chức năng chỉ gồm logic không liên quan đến thực thể"
+    },
+    "correct_answer": "A",
+    "explanation": "Dịch vụ bất khả tri là dịch vụ có logic đủ tổng quát để tái sử dụng trong nhiều quy trình kinh doanh khác nhau. "
+  },
+  {
+    "id": 5,
+    "question_text": "Dịch vụ loại nào được sử dụng để xử lý các thực thể kinh doanh liên quan, như hóa đơn, khách hàng hoặc yêu cầu?",
+    "options": {
+      "A": "Task service",
+      "B": "Microservice",
+      "C": "Entity service",
+      "D": "Utility service"
+    },
+    "correct_answer": "C",
+    "explanation": "Entity service là loại dịch vụ tập trung vào quản lý dữ liệu và các thao tác CRUD đối với các thực thể kinh doanh. "
+  },
+  {
+    "id": 6,
+    "question_text": "Mục đích của bước phân tách chức năng trong phá vỡ vấn đề nghiệp vụ là gì?",
+    "options": {
+      "A": "Tăng tính linh hoạt và mở rộng của hệ thống phần mềm",
+      "B": "Giảm độ phức tạp của hệ thống phần mềm",
+      "C": "Tối ưu hóa hiệu suất của hệ thống phần mềm",
+      "D": "Phân tách một vấn đề lớn hơn thành các vấn đề nhỏ hơn mà các đơn vị logic giải pháp tương ứng có thể được xây dựng"
+    },
+    "correct_answer": "D",
+    "explanation": "Phân tách chức năng giúp chia nhỏ vấn đề lớn thành các phần nhỏ hơn, dễ quản lý và phát triển. "
+  },
+  {
+    "id": 7,
+    "question_text": "Khi nào một non-agnostic logic có thể được đóng gói thành một microservice riêng biệt?",
+    "options": {
+      "A": "Khi logic hành động yêu cầu tăng cường tính tự chủ",
+      "B": "Khi logic hành động yêu cầu ít tài nguyên",
+      "C": "Khi logic hành động không có yêu cầu đặc biệt về hiệu suất",
+      "D": "Khi logic hành động không cần phiên bản hóa và triển khai riêng biệt"
+    },
+    "correct_answer": "A",
+    "explanation": "Non-agnostic logic nên được đóng gói thành microservice riêng khi cần sự tự chủ về xử lý hoặc triển khai. "
+  },
+  {
+    "id": 8,
+    "question_text": "Tại sao hành động \"Tính toán số tiền bồi thường dựa trên quy định của hợp đồng\" được phân loại là non-agnostic?",
+    "options": {
+      "A": "Vì nó không phụ thuộc vào bất kỳ ngữ cảnh cụ thể nào",
+      "B": "Vì nó có thể tái sử dụng trong các quy trình khác mà không cần sửa đổi",
+      "C": "Vì hành động này tuân theo logic riêng biệt áp dụng cho hoạt động bảo hiểm",
+      "D": "Vì nó đòi hỏi sự xác minh của thông tin khách hàng"
+    },
+    "correct_answer": "C",
+    "explanation": "Logic này chỉ áp dụng cho quy trình bảo hiểm, không thể tái sử dụng cho quy trình khác. "
+  },
+  {
+    "id": 9,
+    "question_text": "Trong mô hình REST, đâu là phương pháp chính để tương tác với tài nguyên?",
+    "options": {
+      "A": "Gửi email",
+      "B": "Gửi yêu cầu URL",
+      "C": "Gửi yêu cầu DNS",
+      "D": "Gửi yêu cầu HTTP"
+    },
+    "correct_answer": "D",
+    "explanation": "REST sử dụng các yêu cầu HTTP (GET, POST, PUT, DELETE,...) để tương tác với tài nguyên. "
+  },
+  {
+    "id": 10,
+    "question_text": "Điều gì cần cân nhắc khi sử dụng không gian tên trong tài liệu WSDL?",
+    "options": {
+      "A": "Tăng số lượng không gian tên",
+      "B": "Giảm số lượng không gian tên",
+      "C": "Tổ chức không gian tên một cách cẩn thận và xuyên suốt tài liệu WSDL",
+      "D": "Sử dụng không gian tên riêng"
+    },
+    "correct_answer": "C",
+    "explanation": "Quản lý namespace hợp lý giúp tránh xung đột tên, tăng khả năng bảo trì và mở rộng. "
+  },
+  {
+    "id": 11,
+    "question_text": "Tính năng nào của WSDL cho phép nhập các mô-đun XML Schema?",
+    "options": {
+      "A": "Import statement",
+      "B": "Export statement",
+      "C": "Include statement",
+      "D": "Module statement"
+    },
+    "correct_answer": "A",
+    "explanation": "Câu lệnh import cho phép nhập các schema từ namespace khác vào tài liệu WSDL. "
+  },
+  {
+    "id": 12,
+    "question_text": "Sử dụng Namespaces trong WSDL giúp thực hiện điều gì?",
+    "options": {
+      "A": "Tạo tài liệu WSDL tổng thể",
+      "B": "Tạo các quy tắc định dạng cho tài liệu WSDL",
+      "C": "Tạo tên duy nhất cho các phần tử trong WSDL",
+      "D": "Xác định phạm vi của dịch vụ web"
+    },
+    "correct_answer": "C",
+    "explanation": "Namespace giúp tránh trùng tên phần tử và đảm bảo tính duy nhất trong tài liệu. "
+  },
+  {
+    "id": 13,
+    "question_text": "Which of the following is a primary reason for using asynchronous communication in microservices?",
+    "options": {
+      "A": "To reduce latency in request handling",
+      "B": "To simplify service discovery",
+      "C": "To decouple services for better scalability",
+      "D": "To enforce strict request-response patterns"
+    },
+    "correct_answer": "C",
+    "explanation": "Giao tiếp bất đồng bộ giúp các dịch vụ tách rời nhau, tăng khả năng mở rộng và chịu lỗi. "
+  },
+  {
+    "id": 14,
+    "question_text": "What can be used to enable message persistence in asynchronous systems?",
+    "options": {
+      "A": "Load balancer",
+      "B": "Service discovery",
+      "C": "Message queue",
+      "D": "Circuit breaker"
+    },
+    "correct_answer": "C",
+    "explanation": "Message queue lưu trữ thông điệp cho đến khi được xử lý, đảm bảo không mất dữ liệu khi hệ thống gặp sự cố. "
+  },
+  {
+    "id": 15,
+    "question_text": "How is the domain model mapped to the database in the FTGO application?",
+    "options": {
+      "A": "Using SQL",
+      "B": "Using stored procedures",
+      "C": "Using JPA",
+      "D": "Using REST APIs"
+    },
+    "correct_answer": "C",
+    "explanation": "FTGO sử dụng JPA để ánh xạ domain model sang database. "
+  },
+  {
+    "id": 16,
+    "question_text": "What is the heart of an enterprise application according to Chapter 5?",
+    "options": {
+      "A": "The user interface",
+      "B": "The deployment strategy",
+      "C": "The business logic",
+      "D": "The database schema"
+    },
+    "correct_answer": "C",
+    "explanation": "Business logic là phần cốt lõi quyết định giá trị của ứng dụng doanh nghiệp. "
+  },
+  {
+    "id": 17,
+    "question_text": "Which method best helps monitor distributed microservices?",
+    "options": {
+      "A": "Spreadsheets",
+      "B": "System.out.println logs",
+      "C": "Centralized logging and tracing",
+      "D": "Manual inspection"
+    },
+    "correct_answer": "C",
+    "explanation": "Logging tập trung và tracing giúp giám sát hiệu quả các hệ thống phân tán. "
+  },
+  {
+    "id": 18,
+    "question_text": "What does 'bounded context' refer to in microservice design?",
+    "options": {
+      "A": "A shared model between services",
+      "B": "A service being deployed on multiple servers",
+      "C": "A clear boundary around a specific business capability",
+      "D": "Use of shared data schemas"
+    },
+    "correct_answer": "C",
+    "explanation": "Bounded context là ranh giới rõ ràng cho một năng lực nghiệp vụ cụ thể. "
+  },
+  {
+    "id": 19,
+    "question_text": "Which practice ensures that a microservice is always deployable to production?",
+    "options": {
+      "A": "Canary release",
+      "B": "Blue/Green deployment",
+      "C": "Continuous integration",
+      "D": "Rollback"
+    },
+    "correct_answer": "C",
+    "explanation": "CI đảm bảo microservice luôn ở trạng thái sẵn sàng triển khai. "
+  },
+  {
+    "id": 20,
+    "question_text": "How do service meshes like Istio help in deployment strategies?",
+    "options": {
+      "A": "They encrypt disks",
+      "B": "They manage user permissions",
+      "C": "They allow fine-grained traffic routing",
+      "D": "They store container images"
+    },
+    "correct_answer": "C",
+    "explanation": "Service mesh như Istio cho phép định tuyến lưu lượng chi tiết, hỗ trợ các chiến lược triển khai hiện đại. "
+  },
+  {
+    "id": 21,
+    "question_text": "What is the purpose of CQRS when used with event sourcing?",
+    "options": {
+      "A": "To execute events faster",
+      "B": "To separate the command model from the read model",
+      "C": "To replicate data to multiple nodes",
+      "D": "To reduce storage cost"
+    },
+    "correct_answer": "B",
+    "explanation": "CQRS giúp tách biệt mô hình ghi và đọc, tối ưu hóa từng phần cho mục đích riêng. "
+  },
+  {
+    "id": 22,
+    "question_text": "Which combination often supports scalable and flexible microservice systems?",
+    "options": {
+      "A": "SOAP and Eventual Consistency",
+      "B": "REST and Event Replay",
+      "C": "CQRS and Event Sourcing",
+      "D": "CRUD and Load Balancing"
+    },
+    "correct_answer": "C",
+    "explanation": "CQRS kết hợp Event Sourcing giúp hệ thống mở rộng, linh hoạt và dễ bảo trì. "
+  },
+  {
+    "id": 23,
+    "question_text": "Which factor is NOT a common motivation for using API gateways?",
+    "options": {
+      "A": "Centralizing concerns like security",
+      "B": "Reducing coupling between clients and services",
+      "C": "Providing direct access to all service APIs",
+      "D": "Simplifying response aggregation"
+    },
+    "correct_answer": "C",
+    "explanation": "API Gateway thường ẩn các service backend, không cung cấp truy cập trực tiếp tới tất cả API. "
+  },
+  {
+    "id": 24,
+    "question_text": "Which of the following is NOT typically a client of the FTGO application’s API?",
+    "options": {
+      "A": "Browser-based JavaScript",
+      "B": "Mobile applications",
+      "C": "Third-party partners",
+      "D": "Hardware routers"
+    },
+    "correct_answer": "D",
+    "explanation": "Hardware routers không phải là client thông thường của API FTGO. "
+  },
+  {
+    "id": 25,
+    "question_text": "Which protocol is commonly used for synchronous HTTP communication between services?",
+    "options": {
+      "A": "gRPC",
+      "B": "WebSockets",
+      "C": "SMTP",
+      "D": "Kafka"
+    },
+    "correct_answer": "A",
+    "explanation": "gRPC là giao thức hiện đại hỗ trợ giao tiếp đồng bộ giữa các microservice, dựa trên HTTP/2. "
+  },
+  {
+    "id": 26,
+    "question_text": "What is a benefit of using a circuit breaker in service communication?",
+    "options": {
+      "A": "Enables stateful routing",
+      "B": "Improves serialization speed",
+      "C": "Prevents cascading failures",
+      "D": "Provides data encryption"
+    },
+    "correct_answer": "C",
+    "explanation": "Circuit breaker giúp ngăn chặn lỗi dây chuyền khi một dịch vụ gặp sự cố. "
+  },
+  {
+    "id": 27,
+    "question_text": "Which pattern separates write operations from read operations in a microservices design?",
+    "options": {
+      "A": "Repository Pattern",
+      "B": "CQRS",
+      "C": "Event Sourcing",
+      "D": "Service Locator"
+    },
+    "correct_answer": "B",
+    "explanation": "CQRS tách biệt hoàn toàn thao tác ghi và đọc trong hệ thống. "
+  },
+  {
+    "id": 28,
+    "question_text": "Which of the following best describes eventual consistency in a query model?",
+    "options": {
+      "A": "Read and write operations are immediately consistent",
+      "B": "Data is written once and never changed",
+      "C": "Read models may lag behind write models due to asynchronous updates",
+      "D": "All services write to the same database"
+    },
+    "correct_answer": "C",
+    "explanation": "Eventual consistency nghĩa là dữ liệu đọc có thể bị trễ so với dữ liệu ghi do cập nhật bất đồng bộ. "
+  },
+  {
+    "id": 29,
+    "question_text": "What is the primary challenge when managing transactions in a microservices architecture?",
+    "options": {
+      "A": "Lack of performance",
+      "B": "Lack of scalability",
+      "C": "Distributed nature of services",
+      "D": "Too many logs"
+    },
+    "correct_answer": "C",
+    "explanation": "Tính phân tán của các dịch vụ khiến việc quản lý giao dịch trở nên phức tạp. "
+  },
+  {
+    "id": 30,
+    "question_text": "What is the role of a compensating transaction in the saga pattern?",
+    "options": {
+      "A": "To optimize performance",
+      "B": "To enhance security",
+      "C": "To undo the effect of a previous transaction",
+      "D": "To coordinate services"
+    },
+    "correct_answer": "C",
+    "explanation": "Compensating transaction dùng để hoàn tác các thay đổi khi một bước trong Saga thất bại. "
+  },
+  {
+    "id": 31,
+    "question_text": "Dịch vụ dựa trên SOAP hay REST an toàn hơn?",
+    "options": {
+      "A": "SOAP",
+      "B": "REST",
+      "C": "Tùy thuộc vào cách triển khai cụ thể",
+      "D": "SOAP và REST có cùng mức độ an toàn"
+    },
+    "correct_answer": "C",
+    "explanation": "Mức độ an toàn phụ thuộc vào cách triển khai và các biện pháp bảo mật được áp dụng. "
+  },
+  {
+    "id": 32,
+    "question_text": "Dịch vụ dựa trên SOAP hay REST tuân thủ đặc tả các phương thức của HTTP?",
+    "options": {
+      "A": "SOAP",
+      "B": "REST",
+      "C": "Tùy thuộc vào cách triển khai",
+      "D": "SOAP và REST đều sử dụng động từ HTTP"
+    },
+    "correct_answer": "B",
+    "explanation": "REST tuân thủ đặc tả các phương thức HTTP, còn SOAP chủ yếu dùng POST. "
+  },
+  {
+    "id": 33,
+    "question_text": "Cho đoạn mã nguồn:\n@Path(\"/orders\")\npublic class OrderResource {\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\tpublic Response getOrders() {\n\t\t// Get all orders from the database.\n\t\treturn Response.ok(orders).build();\n\t}\n\t@POST\n\t@Consumes(MediaType.APPLICATION_JSON)\n\tpublic Response createOrder(Order order) {\n\t\t// Create a new order in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@PUT\n\t@Path(\"{id}\")\n\t@Consumes(MediaType.APPLICATION_JSON)\n\tpublic Response updateOrder(@PathParam(\"id\") long id, Order order) {\n\t\t// Update the order with the given ID in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@DELETE\n\t@Path(\"{id}\")\n\tpublic Response deleteOrder(@PathParam(\"id\") long id) {\n\t\t// Delete the order with the given ID from the database.\n\t\treturn Response.ok().build();\n\t}\n}\nHTTP Request nào sẽ được chuyển cho getOrders()?",
+    "options": {
+      "A": "Phương thức POST, đường dẫn /orders",
+      "B": "Phương thức PUT, đường dẫn /orders",
+      "C": "Phương thức GET, đường dẫn /orders/15",
+      "D": "Phương thức GET, đường dẫn /orders"
+    },
+    "correct_answer": "D",
+    "explanation": "Phương thức getOrders() nhận các request GET tới đường dẫn /orders. "
+  },
+  {
+    "id": 37,
+    "question_text": "Trong WSDL, phần service dùng để làm gì?",
+    "options": {
+      "A": "Mô tả cách truy cập và sử dụng các phương thức của web service",
+      "B": "Chứa các tài nguyên của web service",
+      "C": "Chứa các thư viện lập trình",
+      "D": "Chứa các tài liệu hướng dẫn"
+    },
+    "correct_answer": "A",
+    "explanation": "Phần service trong WSDL mô tả endpoint và cách truy cập các phương thức dịch vụ. "
+  },
+  {
+    "id": 38,
+    "question_text": "Trong WSDL trên, đâu là phương thức mà dịch vụ cung cấp?",
+    "options": {
+      "A": "Register",
+      "B": "AccountRegistrationPortType",
+      "C": "RegisterAccount",
+      "D": "AccountRegistrationService"
+    },
+    "correct_answer": "C",
+    "explanation": "Tên phương thức (operation) nằm trong phần portType, ở đây là RegisterAccount. "
+  },
+  {
+    "id": 39,
+    "question_text": "Tên của giao diện dịch vụ là gì?",
+    "options": {
+      "A": "CustomerPortType",
+      "B": "OnlineChargingBinding",
+      "C": "OnlineChargingPortType",
+      "D": "OnlineChargingService"
+    },
+    "correct_answer": "C",
+    "explanation": "Giao diện dịch vụ là tên của portType trong WSDL. "
+  },
+  {
+    "id": 40,
+    "question_text": "Đâu không phải là một phần tử đơn?",
+    "options": {
+      "A": "CustomerName",
+      "B": "CustomerId",
+      "C": "Amount",
+      "D": "Customer"
+    },
+    "correct_answer": "D",
+    "explanation": "Customer là phần tử phức tạp, chứa các phần tử con; các phần tử còn lại là phần tử đơn. "
+  }
+]
