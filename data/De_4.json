@@ -68,8 +68,8 @@
       "C": "Tạo nhãn cho các lớp hướng dịch vụ",
       "D": "Xác định bản chất của các đơn vị logic"
     },
-    "correct_answer": "D",
-    "explanation": "Mô hình hóa dịch vụ là quá trình phân tích sâu vào các quy trình nghiệp vụ để xác định bản chất của các đơn vị logic, từ đó quyết định cách chúng sẽ được hiện thực hóa thành các dịch vụ."
+    "correct_answer": "A",
+    "explanation": "Mặc dù việc 'xác định bản chất của các đơn vị logic' (D) là một bước thiết yếu, mục đích cuối cùng và bao quát của mô hình hóa dịch vụ là 'tổ chức các đơn vị logic thành các giải pháp hướng dịch vụ' (A). Quá trình này không chỉ dừng ở việc nhận diện các dịch vụ riêng lẻ mà còn thiết kế cách chúng tương tác, phối hợp và được cấu thành để tạo ra một hệ thống hoàn chỉnh nhằm giải quyết một bài toán nghiệp vụ."
   },
   {
     "id": 7,
