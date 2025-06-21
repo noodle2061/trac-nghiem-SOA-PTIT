@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Giao diện chính để chọn đề thi -->
+    <div id="topic-selection-view" class="container">
+        <div class="header">
+            <h1>Danh Sách Đề Thi</h1>
+            <p>Vui lòng chọn một đề thi để bắt đầu.</p>
+        </div>
+        <div id="topic-list" class="topic-grid">
+            <!-- Danh sách các đề thi sẽ được JavaScript chèn vào đây -->
+        </div>
+    </div>
+
+    <!-- Giao diện làm bài thi (ẩn ban đầu) -->
+    <div id="quiz-view" class="container" style="display: none;">
+        <div class="header">
+            <button id="back-btn" class="back-btn" title="Quay lại danh sách">&larr; Quay lại</button>
+            <h1 id="quiz-title"></h1>
+            <!-- Các nút chọn chế độ được chuyển vào đây -->
+            <div id="mode-selection-container" class="mode-selection-inline">
+                <button data-mode="preview" class="mode-btn preview">Xem trước</button>
+                <button data-mode="practice" class="mode-btn practice">Ôn tập</button>
+                <button data-mode="test" class="mode-btn test">Kiểm tra</button>
+            </div>
+            <p id="quiz-mode-text" class="quiz-mode-description"></p>
+        </div>
+
+        <form id="quiz-form">
+            <div id="quiz-container">
+                <!-- Vùng này sẽ hiển thị câu hỏi hoặc thông báo chọn chế độ -->
+            </div>
+            
+            <div id="controls-container" class="controls">
+                <button type="submit" id="submit-btn" class="submit-btn">Nộp Bài</button>
+                <button type="button" id="retry-btn" class="retry-btn" style="display: none;">Làm Lại</button>
+            </div>
+        </form>
+
+        <div id="result-container" class="result-container"></div>
+    </div>
+    
+    <!-- Nút làm mới nổi cho chế độ ôn tập -->
+    <button id="floating-refresh-btn" class="floating-btn" title="Làm mới bài ôn tập" style="display: none;">
+        &#x21bb;
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

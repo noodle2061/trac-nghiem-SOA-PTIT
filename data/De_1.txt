@@ -1,0 +1,239 @@
+Câu 1. Độ mịn dịch vụ (Service granularity) là gì?
+==A. Độ đa dạng của các hoạt động trong một dịch vụ web
+B. Độ tương tác giữa các dịch vụ web
+C. Khả năng mở rộng của dịch vụ web
+D. Mức độ kết nối giữa các dịch vụ web
+
+Câu 2. Cái nào không phải là một thuộc tính phi chức năng của dịch vụ web?
+A. Hiệu năng
+B. Bảo mật
+C. Độ tin cậy
+==D. Linh hoạt
+
+Câu 3. Trong SOA, dịch vụ có thể được triển khai như thế nào?
+A. Một ứng dụng độc lập
+B. Một module của ứng dụng
+C. Một phần của hệ thống
+==D. Tất cả các phương án trên
+
+Câu 4. Vì sao đặc điểm hướng mô hình kinh doanh của SOA lại giúp tăng giá trị và tuổi thọ của kiến trúc?
+==A. Giữ đồng bộ liên tục với cách doanh nghiệp phát triển theo thời gian
+B. Làm mô hình kinh doanh phát triển nhanh
+C. Hỗ trợ quá trình chuẩn hóa kinh doanh
+D. Phát triển theo thời gian
+
+Câu 5. Một dịch vụ khi nào được coi là bất khả tri?
+==A. Chứa logic có khả năng tái sử dụng bởi nhiều quy trình nghiệp vụ
+B. Chức logic không thể tái sử dụng nhưng có thể có tiềm năng tái sử dụng trong giải pháp
+C. Khi nó có khả năng triển khai độc lập
+D. Chức các logic không thể tái sử dụng bởi các quy trình nghiệp vụ
+
+Câu 6. Dịch vụ loại nào chứa các chức năng cấp thấp liên quan đến công nghệ, như thông báo, ghi nhật ký và xử lý bảo mật?
+A. Task service
+B. Microservice
+C. Entity service
+==D. Utility service
+
+Câu 7. Task Service đóng vai trò gì trong các hệ thống hướng dịch vụ?
+A. Quản lý các thực thể dữ liệu trong cơ sở dữ liệu
+==B. Điều phối và quản lý các quy trình kinh doanh phức tạp
+C. Cung cấp các chức năng tiện ích độc lập
+D. Xác định các quan hệ giữa các dịch vụ thực thể
+
+Câu 8. Trong quy trình mô hình hóa Web service, việc soát lại ứng viên tổ hợp dịch vụ có thể thêm những layer nào vào ứng viên tổ hợp dịch vụ?
+A. Task service và microservice
+B. Microservice và entity service
+C. Microservice và utility service
+==D. Entity service và utility service
+
+Câu 9. Trong phân tích hướng dịch vụ, các agnostic logic trong quy trình kinh doanh là những logic như thế nào?
+==A. Có khả năng tái sử dụng lại cao trong nhiều quy trình nghiệp vụ
+B. Chỉ phục vụ một quy trình nghiệp vụ cụ thể và không thể tái sử dụng trong các quy trình khác
+C. Liên quan đến việc xử lý dữ liệu của các hệ thống cụ thể mà không phụ thuộc vào ngữ cảnh nghiệp vụ
+D. Yêu cầu sự tùy chỉnh đặc thù cho từng quy trình nghiệp vụ
+
+Câu 10. Nguyên tắc "Service Reusability" áp dụng như thế nào trong thiết kế dịch vụ?
+==A. Thiết kế dịch vụ không phụ thuộc vào nghiệp vụ cụ thể
+B. Thiết kế dịch vụ phải phụ thuộc vào nghiệp vụ cụ thể
+C. Thiết kế dịch vụ phải thay đổi theo từng lần sử dụng
+D. Thiết kế dịch vụ phải tối ưu hóa cho từng tình huống cụ thể
+
+Câu 11. Service contract REST được thiết lập dựa trên điều gì trong quá trình phân tích hướng dịch vụ?
+A. Hiệu suất của hệ thống
+==B. Ngữ cảnh chức năng
+C. Tính bảo mật của dữ liệu
+D. Tính khả dụng của dịch vụ
+
+Câu 12. Kết hợp thuộc tính nào là ưa chuộng trong thiết kế hợp đồng dịch vụ Web?
+==A. style:document + use:literal
+B. style:document + use:encoded
+C. style:RPC + use:encoded
+D. style:RPC + use:literal
+
+Câu 13. What is the role of a message broker in microservice communication?
+A. Transform HTTP to gRPC
+B. Store configuration settings
+==C. Coordinate and route messages
+D. Serve static content
+
+Câu 14. Which of the following is a primary reason for using asynchronous communication in microservices?
+A. To reduce latency in request handling
+B. To simplify service discovery
+==C. To decouple services for better scalability
+D. To enforce strict request-response patterns
+
+Câu 15. What does the transaction script pattern typically use?
+A. Object references
+==B. Flat procedures
+C. Event-driven architecture
+D. Command-query separation
+
+Câu 16. What is the heart of an enterprise application according to Chapter 5?
+A. The user interface
+B. The deployment strategy
+==C. The business logic
+D. The database schema
+
+Câu 17. Which database strategy is most aligned with microservices?
+A. Shared database for all services
+B. Single monolithic database
+==C. Database per service
+D. In-memory only
+
+Câu 18. What does 'bounded context' refer to in microservice design?
+A. A shared model between services
+B. A service being deployed on multiple servers
+==C. A clear boundary around a specific business capability
+D. Use of shared data schemas
+
+Câu 19. How does a canary release strategy reduce risk during deployment?
+A. It deploys to all servers at once
+B. It updates only the configuration
+==C. It releases to a small group first
+D. It skips integration testing
+
+Câu 20. Which of the following tools is commonly used for container orchestration?
+A. Docker
+B. Consul
+==C. Kubernetes
+D. Helm
+
+Câu 21. What is the typical purpose of a command in event sourcing?
+A. Query data from the database
+B. Request system configuration
+==C. Trigger a state change resulting in events
+D. Listen to state changes
+
+Câu 22. What challenge is commonly associated with event sourcing?
+A. Fast writes to the database
+B. Scaling read operations
+C. Keeping events small in size
+==D. Rebuilding state after many events
+
+Câu 23. Which of the following is NOT typically a client of the FTGO application’s API?
+A. Browser-based JavaScript
+B. Mobile applications
+C. Third-party partners
+==D. Hardware routers
+
+Câu 24. Why is designing the external API more challenging in microservices than in monoliths?
+A. Microservices do not allow REST
+==B. Each service has its own interface and clients vary
+C. Clients always prefer SOAP
+D. Clients do not use APIs
+
+Câu 25. Which service pattern supports observability in distributed systems?
+A. Orchestration
+==B. Tracing
+C. Logging only
+D. Database sharding
+
+Câu 26. What is a benefit of using a circuit breaker in service communication?
+A. Enables stateful routing
+B. Improves serialization speed
+==C. Prevents cascading failures
+D. Provides data encryption
+
+Câu 27. Which mechanism is commonly used to propagate domain changes to query models?
+A. HTTP polling
+B. Direct database replication
+==C. Domain events and messaging
+D. API Gateway transforms
+
+Câu 28. How are read models typically kept up-to-date?
+A. Through manual synchronization
+B. By querying write databases
+==C. By consuming and handling domain events
+D. Through direct API calls
+
+Câu 29. You are designing a distributed order process, which pattern would allow you to manage failures gracefully?
+A. Two-Phase Commit
+B. Synchronous RPC
+==C. Saga with compensating transactions
+D. Retry with timeout
+
+Câu 30. Which component is NOT typically involved in saga pattern orchestration?
+A. Saga orchestrator
+==B. Database lock
+C. Service participant
+D. Compensation logic
+
+Câu 31. Dịch vụ dựa trên RESTful hỗ trợ định dạng dữ liệu nào?
+A. XML
+B. JSON
+C. YAML
+==D. Cả 3 loại trên
+
+Câu 32. Nếu không cài đặt gì thêm, SOAP hay REST có thể sử dụng máy chủ caching?
+A. SOAP
+==B. REST
+C. Cả SOAP và REST đều có thể sử dụng máy chủ caching
+D. Không SOAP và REST đều không thể sử dụng máy chủ caching
+
+Câu 33. Cho đoạn mã nguồn:@Path("/products")public class ProductResource { @GET @Produces(MediaType.APPLICATION_JSON) public Response getProducts() { // Get all products from the database. return Response.ok(products).build(); } @POST @Consumes(MediaType.APPLICATION_XML) public Response createProduct(Product product) { // Create a new product in the database. return Response.ok().build(); } @PUT @Path("{id}") @Consumes(MediaType.MULTIPART_FORM_DATA) public Response updateProduct(@PathParam("id") long id, Product product) { // Update the product with the given ID in the database. return Response.ok().build(); } @DELETE @Path("{id}") public Response deleteProduct(@PathParam("id") long id) { // Delete the product with the given ID from the database. return Response.ok().build(); } } HTTP Request nào sẽ được chuyển cho updateProduct () ?
+A. Phương thức PUT, đường dẫn /products
+==B. Phương thức PUT, đường dẫn /products/15
+C. Phương thức GET, đường dẫn /products/15
+D. Phương thức GET, đường dẫn /products
+
+Câu 34. Cho đoạn mã nguồn:@Path("/products")public class ProductResource { @GET @Produces(MediaType.APPLICATION_JSON) public Response getProducts() { // Get all products from the database. return Response.ok(products).build(); } @POST @Consumes(MediaType.APPLICATION_XML) public Response createProduct(Product product) { // Create a new product in the database. return Response.ok().build(); } @PUT @Path("{id}") @Consumes(MediaType.MULTIPART_FORM_DATA) public Response updateProduct(@PathParam("id") long id, Product product) { // Update the product with the given ID in the database. return Response.ok().build(); } @DELETE @Path("{id}") public Response deleteProduct(@PathParam("id") long id) { // Delete the product with the given ID from the database. return Response.ok().build(); } } HTTP Request nào sẽ không được chuyển cho updateProduct () ?
+A. Phương thức PUT, đường dẫn /products/15
+==B. Phương thức PUT, đường dẫn /products
+C. Phương thức PUT, đường dẫn /products/16
+D. Phương thức PUT, đường dẫn /products/17
+
+Câu 35. Cho đoạn mã nguồn:@Path("/orders")public class OrderResource { @GET @Produces(MediaType.APPLICATION_JSON) public Response getOrders() { // Get all orders from the database. return Response.ok(orders).build(); } @POST @Consumes(MediaType.APPLICATION_JSON) public Response createOrder(Order order) { // Create a new order in the database. return Response.ok().build(); } @PUT @Path("{id}") @Consumes(MediaType.APPLICATION_JSON) public Response updateOrder(@PathParam("id") long id, Order order) { // Update the order with the given ID in the database. return Response.ok().build(); } @DELETE @Path("{id}") public Response deleteOrder(@PathParam("id") long id) { // Delete the order with the given ID from the database. return Response.ok().build(); } }HTTP Request nào sẽ không được chuyển cho updateOrder () ?
+A. Phương thức PUT, đường dẫn /orders/15
+==B. Phương thức PUT, đường dẫn /orders
+C. Phương thức PUT, đường dẫn /orders/16
+D. Phương thức PUT, đường dẫn /orders/17
+
+Câu 36. Cấu trúc dữ liệu phổ biến để truyền thông tin trong Restful web service là gì?
+A. XML
+==B. JSON
+C. HTML
+D. CSV
+
+Câu 37. SOAP là viết tắt của từ gì?
+==A. Simple Object Access Protocol
+B. Service Object Access Protocol
+C. Service Oriented Architecture Protocol
+D. Service Object Architecture Protocol
+
+Câu 38. Cho định nghĩa WSDL: <wsdl:definitions ...> ... <xsd:element name="Customer"> <xsd:complexType> <xsd:sequence> <xsd:element name="CustomerId" type="xsd:string" minOccurs="1" /> <xsd:element name="CustomerName" type="xsd:string" minOccurs="1" /> </xsd:sequence> </xsd:complexType> </xsd:element> <xsd:element name="Charge"> <xsd:complexType> <xsd:sequence> <xsd:element name="CustomerId" type="xsd:string" minOccurs="1" /> <xsd:element name="Amount" type="xsd:double" minOccurs="1" /> </xsd:sequence> </xsd:complexType> </xsd:element> <xsd:element name="ChargeResult"> <xsd:complexType> <xsd:sequence> <xsd:element name="Status" type="xsd:string" minOccurs="1" /> <xsd:element name="Message" type="xsd:string" minOccurs="1" /> </xsd:sequence> </xsd:complexType> </xsd:element> ... </wsdl:definitions> Đâu không phải là một phần tử phức ?
+A. Customer
+==B. CustomerId
+C. Charge
+D. ChargeResult
+
+Câu 39. Cho định nghĩa WSDL: <?xml version="1.0" encoding="UTF-8"?> <definitions ...> <types> <xsd:schema ...> <xsd:element name="Account"> <xsd:complexType> <xsd:sequence> <xsd:element name="username" type="xsd:string"/> <xsd:element name="password" type="xsd:string"/> </xsd:sequence> </xsd:complexType> </xsd:element> <xsd:element name="AccountResponse"> <xsd:complexType> <xsd:sequence> <xsd:element name="success" type="xsd:boolean"/> </xsd:sequence> </xsd:complexType> </xsd:element> </xsd:schema> </types> <message name="RegisterAccount"> <part name="parameters" element="tns:Account"/> </message> ... </definitions> Thông tin nào được yêu cầu khi gửi dữ liệu đến dịch vụ web?
+A. Đầu vào: tên người dùng, mật khẩu, email, số điện thoại. Đầu ra: thành công
+B. Đầu vào: tên người dùng, mật khẩu, email. Đầu ra: thành công
+==C. Đầu vào: tên người dùng, mật khẩu. Đầu ra: thành công
+D. Đầu vào: tên người dùng, mật khẩu, email, số điện thoại, địa chỉ. Đầu ra: thành công
+
+Câu 40. Cho định nghĩa WSDL: <wsdl:definitions ...> ... <wsdl:message name="ChargeResponse"> <wsdl:part name="result" element="tns:ChargeResult" /> </wsdl:message> <wsdl:portType name="OnlineChargingPortType"> <wsdl:operation name="Charge"> <wsdl:input message="tns:ChargeRequest" /> <wsdl:output message="tns:ChargeResponse" /> </wsdl:operation> </wsdl:portType> ... </wsdl:definitions> Tên phần tử đại diện cho kết quả của giao dịch nạp tiền trong tệp WSDL là gì?
+A. ChargeResponse
+==B. ChargeResult
+C. ChargeData
+D. ChargeDetails

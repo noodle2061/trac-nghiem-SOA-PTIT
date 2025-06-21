@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "question_text": "SOA tập trung vào việc gì?",
+    "options": {
+      "A": "Xây dựng ứng dụng di động",
+      "B": "Phân tích dữ liệu",
+      "C": "Tích hợp các hệ thống khác nhau",
+      "D": "Phân loại dữ liệu"
+    },
+    "correct_answer": "C",
+    "explanation": "Mục tiêu cốt lõi của Kiến trúc hướng dịch vụ (SOA) là cho phép các hệ thống và ứng dụng khác nhau có thể giao tiếp và tích hợp với nhau một cách linh hoạt thông qua các dịch vụ được tiêu chuẩn hóa."
+  },
+  {
+    "id": 2,
+    "question_text": "Khi xây dựng một dịch vụ web đặt vé xem phim, việc áp dụng độ mịn như thế nào có thể giúp tăng khả năng mở rộng của hệ thống?",
+    "options": {
+      "A": "Áp dụng độ mịn để chia nhỏ các chức năng như quản lý phim, quản lý rạp chiếu, quản lý đặt vé",
+      "B": "Áp dụng độ mịn để gộp các chức năng đặt vé thành một dịch vụ duy nhất",
+      "C": "Áp dụng độ mịn không ảnh hưởng đến khả năng mở rộng của hệ thống",
+      "D": "Áp dụng độ mịn chỉ cần xác định các API cho việc đặt vé"
+    },
+    "correct_answer": "A",
+    "explanation": "Việc chia nhỏ các chức năng thành các dịch vụ độc lập (độ mịn cao hơn) cho phép mỗi dịch vụ (ví dụ: quản lý phim) có thể được mở rộng quy mô riêng biệt khi cần, giúp tối ưu hóa tài nguyên và tăng khả năng mở rộng của cả hệ thống."
+  },
+  {
+    "id": 3,
+    "question_text": "Ví dụ nào dưới đây là 1 thuộc tính phi chức năng của dịch vụ web là gì?",
+    "options": {
+      "A": "Quản lý dữ liệu hiệu quả",
+      "B": "Giao diện người dùng dễ sử dụng",
+      "C": "Thời gian đáp ứng yêu cầu",
+      "D": "Tích hợp với các hệ thống khác"
+    },
+    "correct_answer": "C",
+    "explanation": "Thuộc tính phi chức năng mô tả 'cách' một hệ thống hoạt động, không phải 'cái' nó làm. Thời gian đáp ứng là một thước đo hiệu suất, là một thuộc tính phi chức năng kinh điển."
+  },
+  {
+    "id": 4,
+    "question_text": "Vì sao khi thiết kế kiến trúc dịch vụ cần lấy doanh nghiệp làm trung tâm?",
+    "options": {
+      "A": "Để dùng chung các service",
+      "B": "Tránh nguy cơ tạo ra các silo mới trong doanh nghiệp",
+      "C": "Tránh các dịch vụ xa rời mục đích kinh doanh",
+      "D": "Tuổi thọ kiến trúc thấp"
+    },
+    "correct_answer": "C",
+    "explanation": "Việc lấy doanh nghiệp làm trung tâm đảm bảo rằng các dịch vụ được xây dựng giải quyết các vấn đề và mục tiêu kinh doanh thực tế, mang lại giá trị và tránh lãng phí nguồn lực vào các giải pháp công nghệ không cần thiết."
+  },
+  {
+    "id": 5,
+    "question_text": "Điều kiện để một dịch vụ được coi là bất khả tri?",
+    "options": {
+      "A": "Chứa logic có khả năng tái sử dụng bởi nhiều quy trình kinh doanh",
+      "B": "Chứa logic được sử dụng trong một quy trình kinh doanh duy nhất",
+      "C": "Các chức năng được phát triển từ các thực thể",
+      "D": "Các chức năng chỉ gồm logic không liên quan đến thực thể"
+    },
+    "correct_answer": "A",
+    "explanation": "Một dịch vụ được coi là 'bất khả tri' (agnostic) khi logic của nó không phụ thuộc vào một quy trình nghiệp vụ cụ thể nào, cho phép nó được tái sử dụng trong nhiều ngữ cảnh khác nhau."
+  },
+  {
+    "id": 6,
+    "question_text": "Mục đích của quá trình mô hình hóa dịch vụ là gì?",
+    "options": {
+      "A": "Tổ chức các đơn vị logic thành các giải pháp hướng dịch vụ",
+      "B": "Phân loại các đơn vị logic dựa trên kích thước của chúng",
+      "C": "Tạo nhãn cho các lớp hướng dịch vụ",
+      "D": "Xác định bản chất của các đơn vị logic"
+    },
+    "correct_answer": "D",
+    "explanation": "Mô hình hóa dịch vụ là quá trình phân tích sâu vào các quy trình nghiệp vụ để xác định bản chất của các đơn vị logic, từ đó quyết định cách chúng sẽ được hiện thực hóa thành các dịch vụ."
+  },
+  {
+    "id": 7,
+    "question_text": "Sự khác biệt chính giữa RESTful services và SOAP-based web services trong phân tích hướng dịch vụ là gì?",
+    "options": {
+      "A": "Tối ưu hóa hiệu suất của các dịch vụ",
+      "B": "Xác định ranh giới chính xác cho các dịch vụ",
+      "C": "Xác định giao diện của các dịch vụ",
+      "D": "Xác định các thực thể kinh doanh cần dịch vụ hỗ trợ"
+    },
+    "correct_answer": "B",
+    "explanation": "Trong quá trình phân tích, việc lựa chọn giữa REST và SOAP ảnh hưởng đến cách xác định ranh giới dịch vụ. REST thường phù hợp với các dịch vụ hướng tài nguyên, trong khi SOAP có thể phù hợp hơn với các dịch vụ hướng hành động phức tạp."
+  },
+  {
+    "id": 8,
+    "question_text": "Quá trình mô hình hóa dịch vụ có cần phải đảm bảo tính linh hoạt của hợp đồng dịch vụ?",
+    "options": {
+      "A": "Có, để dễ dàng cập nhật và thay đổi trong quá trình phát triển",
+      "B": "Không, để đảm bảo tính nhất quán và ổn định của dịch vụ",
+      "C": "Có, để giảm thiểu sự phức tạp của dịch vụ",
+      "D": "Không, để giảm thiểu rủi ro và lỗi trong quá trình triển khai"
+    },
+    "correct_answer": "A",
+    "explanation": "Thiết kế hợp đồng dịch vụ linh hoạt ngay từ đầu sẽ giúp hệ thống dễ dàng thích ứng với các thay đổi và yêu cầu mới trong tương lai mà không cần phải thiết kế lại toàn bộ."
+  },
+  {
+    "id": 9,
+    "question_text": "Trong quy trình mô hình hóa web service, ứng viên dịch vụ nào được xác định đầu tiên?",
+    "options": {
+      "A": "Entity service",
+      "B": "Task service",
+      "C": "Microservice",
+      "D": "Utility Service"
+    },
+    "correct_answer": "A",
+    "explanation": "Quá trình mô hình hóa thường bắt đầu bằng việc xác định các thực thể kinh doanh cốt lõi (ví dụ: Khách hàng, Đơn hàng), từ đó hình thành các Entity service để quản lý chúng."
+  },
+  {
+    "id": 10,
+    "question_text": "Thuộc tính style với giá trị \"document\" hỗ trợ việc gì?",
+    "options": {
+      "A": "Nhúng toàn bộ tài liệu XML trong phần thân SOAP",
+      "B": "Biểu diễn dữ liệu loại tham số",
+      "C": "Hỗ trợ việc giao tiếp RPC truyền thống",
+      "D": "Áp dụng các kiểu dữ liệu XML Schema"
+    },
+    "correct_answer": "A",
+    "explanation": "Khi sử dụng `style=\"document\"` trong WSDL, phần thân của thông điệp SOAP chứa một tài liệu XML hoàn chỉnh, cho phép gửi các cấu trúc dữ liệu phức tạp."
+  },
+  {
+    "id": 11,
+    "question_text": "Thuộc tính use với giá trị \"literal\" đại diện cho việc sử dụng hệ thống kiểu dữ liệu nào?",
+    "options": {
+      "A": "Hệ thống kiểu dữ liệu riêng của SOAP",
+      "B": "Hệ thống kiểu dữ liệu XML Schema",
+      "C": "Hệ thống kiểu dữ liệu WSDL",
+      "D": "Hệ thống kiểu dữ liệu RPC"
+    },
+    "correct_answer": "B",
+    "explanation": "`use=\"literal\"` có nghĩa là nội dung thông điệp SOAP tuân thủ hoàn toàn theo định nghĩa trong XML Schema (XSD), không có sự mã hóa hay biến đổi nào khác."
+  },
+  {
+    "id": 12,
+    "question_text": "(Nội dung câu hỏi bị thiếu, các lựa chọn bên dưới có thể liên quan đến mục đích của kiểu document/literal)",
+    "options": {
+      "A": "Trao đổi tài liệu XML hoàn chỉnh",
+      "B": "Gọi các hàm từ xa với các tham số",
+      "C": "Gửi và nhận email",
+      "D": "Quản lý file hệ thống"
+    },
+    "correct_answer": "A",
+    "explanation": "Sự kết hợp của kiểu `document/literal` được thiết kế chủ yếu cho mục đích trao đổi các tài liệu XML hoàn chỉnh, phức tạp giữa các hệ thống."
+  },
+  {
+    "id": 13,
+    "question_text": "Which of the following is a primary reason for using asynchronous communication in microservices?",
+    "options": {
+      "A": "To reduce latency in request handling",
+      "B": "To simplify service discovery",
+      "C": "To decouple services for better scalability",
+      "D": "To enforce strict request-response patterns"
+    },
+    "correct_answer": "C",
+    "explanation": "Giao tiếp không đồng bộ cho phép các dịch vụ hoạt động mà không cần chờ đợi phản hồi từ nhau. Điều này làm giảm sự phụ thuộc (decouple), giúp các dịch vụ có thể mở rộng và phát triển độc lập."
+  },
+  {
+    "id": 14,
+    "question_text": "Which service pattern supports observability in distributed systems?",
+    "options": {
+      "A": "Orchestration",
+      "B": "Tracing",
+      "C": "Logging only",
+      "D": "Database sharding"
+    },
+    "correct_answer": "B",
+    "explanation": "Truy vết phân tán (Distributed Tracing) là một mẫu thiết yếu để theo dõi một yêu cầu khi nó đi qua nhiều dịch vụ, cung cấp khả năng quan sát (observability) toàn diện về luồng hoạt động của hệ thống."
+  },
+  {
+    "id": 15,
+    "question_text": "Which object-oriented design principle is encouraged for complex business logic?",
+    "options": {
+      "A": "Encapsulation",
+      "B": "Inheritance",
+      "C": "Applying object-oriented design principles",
+      "D": "Polymorphism"
+    },
+    "correct_answer": "A",
+    "explanation": "Tính đóng gói (Encapsulation) giúp che giấu sự phức tạp của logic nghiệp vụ bên trong một đối tượng và chỉ lộ ra các giao diện cần thiết, giúp mã nguồn dễ quản lý và bảo trì hơn."
+  },
+  {
+    "id": 16,
+    "question_text": "What does the Domain Event pattern facilitate?",
+    "options": {
+      "A": "Immediate data consistency",
+      "B": "Long-running transactions",
+      "C": "Loose coupling between services",
+      "D": "UI responsiveness"
+    },
+    "correct_answer": "C",
+    "explanation": "Bằng cách sử dụng sự kiện miền (Domain Event), các dịch vụ có thể thông báo cho nhau về những thay đổi mà không cần biết đến sự tồn tại của nhau. Điều này tạo ra sự kết nối lỏng lẻo (loose coupling)."
+  },
+  {
+    "id": 17,
+    "question_text": "How can a service publish domain events to other services?",
+    "options": {
+      "A": "By using a shared memory object",
+      "B": "Through REST polling",
+      "C": "Via event-driven messaging",
+      "D": "Through FTP updates"
+    },
+    "correct_answer": "C",
+    "explanation": "Giao tiếp hướng sự kiện (event-driven messaging), thường thông qua một message broker, là phương pháp chuẩn để một dịch vụ phát đi các sự kiện và các dịch vụ khác có thể lắng nghe một cách hiệu quả và đáng tin cậy."
+  },
+  {
+    "id": 18,
+    "question_text": "When should a team split a monolith into microservices?",
+    "options": {
+      "A": "When the monolith is fast",
+      "B": "When modular boundaries are clear and aligned to business domains",
+      "C": "When using a single tech stack",
+      "D": "At the start of a project"
+    },
+    "correct_answer": "B",
+    "explanation": "Thời điểm tốt nhất để tách một ứng dụng nguyên khối là khi đã xác định được các ranh giới module rõ ràng, tương ứng với các lĩnh vực kinh doanh cụ thể. Điều này giúp đảm bảo các microservice có tính gắn kết cao và kết nối lỏng lẻo."
+  },
+  {
+    "id": 19,
+    "question_text": "To avoid configuration drift, what strategy is recommended?",
+    "options": {
+      "A": "Manual editing of each instance",
+      "B": "Centralized logging",
+      "C": "Infrastructure as Code",
+      "D": "Increasing replicas"
+    },
+    "correct_answer": "C",
+    "explanation": "Hạ tầng dưới dạng mã (Infrastructure as Code - IaC) giúp quản lý và cung cấp hạ tầng thông qua các tệp định nghĩa có thể kiểm soát phiên bản, đảm bảo tính nhất quán và tránh 'lệch cấu hình' (configuration drift)."
+  },
+  {
+    "id": 20,
+    "question_text": "What is a typical component of a CI/CD toolchain?",
+    "options": {
+      "A": "Load balancer",
+      "B": "Version control system",
+      "C": "Firewall",
+      "D": "Database driver"
+    },
+    "correct_answer": "B",
+    "explanation": "Hệ thống quản lý phiên bản (Version Control System) như Git là thành phần không thể thiếu, là nguồn sự thật duy nhất cho mã nguồn và là điểm khởi đầu của mọi quy trình CI/CD."
+  },
+  {
+    "id": 21,
+    "question_text": "Which statement is true about deleting events in event sourcing?",
+    "options": {
+      "A": "Events can be deleted after being processed",
+      "B": "Events are immutable and typically not deleted",
+      "C": "Events are deleted after each projection update",
+      "D": "Events must be encrypted then deleted"
+    },
+    "correct_answer": "B",
+    "explanation": "Trong Event Sourcing, các sự kiện là bất biến và chỉ được phép ghi thêm. Chúng đại diện cho lịch sử của hệ thống và không bao giờ bị xóa, đảm bảo tính toàn vẹn và khả năng kiểm toán."
+  },
+  {
+    "id": 22,
+    "question_text": "Why is immutability important in event sourcing?",
+    "options": {
+      "A": "It reduces memory consumption",
+      "B": "It avoids concurrency issues and ensures auditability",
+      "C": "It allows event deletion when necessary",
+      "D": "It simplifies UI rendering"
+    },
+    "correct_answer": "B",
+    "explanation": "Tính bất biến (immutability) của các sự kiện đảm bảo rằng quá khứ không thể bị thay đổi, tạo ra một nhật ký kiểm toán (audit trail) đáng tin cậy và loại bỏ nhiều vấn đề phức tạp liên quan đến tương tranh dữ liệu."
+  },
+  {
+    "id": 23,
+    "question_text": "What is one of the main reasons for using an API gateway in a microservices architecture?",
+    "options": {
+      "A": "To increase database performance",
+      "B": "To expose internal service APIs directly",
+      "C": "To act as a single entry point for clients",
+      "D": "To remove the need for load balancing"
+    },
+    "correct_answer": "C",
+    "explanation": "API Gateway cung cấp một điểm vào duy nhất và nhất quán cho các client bên ngoài, che giấu sự phức tạp của hệ thống microservice bên trong và đơn giản hóa việc tương tác."
+  },
+  {
+    "id": 24,
+    "question_text": "What is the challenge with having a one-size-fits-all API in microservices?",
+    "options": {
+      "A": "It is always slower than direct DB queries",
+      "B": "It requires GraphQL",
+      "C": "Different clients have different data needs and network constraints",
+      "D": "It reduces reusability of services"
+    },
+    "correct_answer": "C",
+    "explanation": "Các client khác nhau (web, di động, đối tác) thường có nhu cầu dữ liệu khác nhau. Một API chung cho tất cả sẽ khó có thể tối ưu cho từng trường hợp cụ thể."
+  },
+  {
+    "id": 25,
+    "question_text": "Which protocol is commonly used for synchronous communication between services?",
+    "options": {
+      "A": "gRPC",
+      "B": "WebSockets",
+      "C": "SMTP",
+      "D": "Kafka"
+    },
+    "correct_answer": "A",
+    "explanation": "gRPC là một framework RPC hiệu suất cao, thường được sử dụng cho giao tiếp đồng bộ giữa các dịch vụ nội bộ vì tốc độ và hiệu quả của nó so với REST/JSON truyền thống."
+  },
+  {
+    "id": 26,
+    "question_text": "Which HTTP status code often indicates a downstream service is unavailable?",
+    "options": {
+      "A": "200",
+      "B": "404",
+      "C": "503",
+      "D": "301"
+    },
+    "correct_answer": "C",
+    "explanation": "Mã trạng thái 503 Service Unavailable cho biết rằng máy chủ hiện không thể xử lý yêu cầu, thường là do quá tải hoặc đang bảo trì. Đây là dấu hiệu một dịch vụ phụ thuộc (downstream) đang gặp sự cố."
+  },
+  {
+    "id": 27,
+    "question_text": "How does the query side handle updates when using Event Sourcing?",
+    "options": {
+      "A": "By updating the database directly",
+      "B": "By consuming events and updating read models accordingly",
+      "C": "By translating commands into updates",
+      "D": "By replacing the entire dataset"
+    },
+    "correct_answer": "B",
+    "explanation": "Trong các kiến trúc như CQRS/Event Sourcing, phía truy vấn (query side) sẽ lắng nghe các sự kiện được phát ra và sử dụng thông tin từ các sự kiện đó để cập nhật các mô hình đọc của mình."
+  },
+  {
+    "id": 28,
+    "question_text": "Which mechanism is commonly used to propagate domain changes to query models?",
+    "options": {
+      "A": "HTTP polling",
+      "B": "Direct database replication",
+      "C": "Domain events and messaging",
+      "D": "API Gateway transforms"
+    },
+    "correct_answer": "C",
+    "explanation": "Sử dụng sự kiện miền và hệ thống tin nhắn là cách tiếp cận linh hoạt và có khả năng mở rộng để lan truyền các thay đổi từ phía ghi sang phía đọc mà không tạo ra sự phụ thuộc chặt chẽ."
+  },
+  {
+    "id": 29,
+    "question_text": "What is the key difference between monolithic and microservices-based transaction handling?",
+    "options": {
+      "A": "Monoliths handle distributed state",
+      "B": "Microservices use centralized databases",
+      "C": "Microservices involve distributed transaction context",
+      "D": "Monoliths cannot handle ACID properties"
+    },
+    "correct_answer": "C",
+    "explanation": "Trong ứng dụng nguyên khối, giao dịch thường diễn ra trong một cơ sở dữ liệu duy nhất. Trong microservice, một giao dịch có thể kéo dài qua nhiều dịch vụ, mỗi dịch vụ có cơ sở dữ liệu riêng, tạo ra bối cảnh giao dịch phân tán."
+  },
+  {
+    "id": 30,
+    "question_text": "In an e-commerce checkout using saga, if the payment step fails, what should happen?",
+    "options": {
+      "A": "Notify admin only",
+      "B": "Compensate previous steps like canceling order and restocking",
+      "C": "Retry indefinitely",
+      "D": "Send error log"
+    },
+    "correct_answer": "B",
+    "explanation": "Nguyên tắc của mẫu Saga là nếu một bước thất bại, các bước đã thành công trước đó phải được hoàn tác thông qua các giao dịch bù trừ để đảm bảo tính nhất quán của toàn bộ quy trình."
+  },
+  {
+    "id": 31,
+    "question_text": "Dịch vụ web SOAP có hợp đồng không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Đôi khi",
+      "D": "Tùy thuộc"
+    },
+    "correct_answer": "A",
+    "explanation": "Có, dịch vụ SOAP luôn có một hợp đồng chính thức và chặt chẽ được định nghĩa bằng ngôn ngữ WSDL (Web Services Definition Language)."
+  },
+  {
+    "id": 32,
+    "question_text": "Chú thích nào thường được sử dụng để chỉ định đường dẫn cho dịch vụ web?",
+    "options": {
+      "A": "Chú thích @Path",
+      "B": "Chú thích @RestController",
+      "C": "Chú thích @RequestMapping",
+      "D": "Chú thích @Service"
+    },
+    "correct_answer": "A",
+    "explanation": "Trong JAX-RS (API chuẩn cho RESTful web services trong Java), chú thích `@Path` được sử dụng để chỉ định URI tương đối cho một lớp tài nguyên hoặc một phương thức."
+  },
+  {
+    "id": 33,
+    "question_text": "Cho đoạn mã nguồn:\n@Path(\"/products\")\npublic class ProductResource {\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\tpublic Response getProducts() {\n\t\t// Get all products from the database.\n\t\treturn Response.ok(products).build();\n\t}\n\t@POST\n\t@Consumes(MediaType.APPLICATION_XML)\n\tpublic Response createProduct(Product product) {\n\t\t// Create a new product in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@PUT\n\t@Path(\"{id}\")\n\t@Consumes(MediaType.MULTIPART_FORM_DATA)\n\tpublic Response updateProduct(@PathParam(\"id\") long id, Product product) {\n\t\t// Update the product with the given ID in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@DELETE\n\t@Path(\"{id}\")\n\tpublic Response deleteProduct(@PathParam(\"id\") long id) {\n\t\t// Delete the product with the given ID from the database.\n\t\treturn Response.ok().build();\n\t}\n}\nKiểu dữ liệu cho yêu cầu của phương thức createProduct() là gì?",
+    "options": {
+      "A": "text/plain",
+      "B": "application/json",
+      "C": "application/xml",
+      "D": "image/jpeg"
+    },
+    "correct_answer": "C",
+    "explanation": "Chú thích `@Consumes(MediaType.APPLICATION_XML)` trên phương thức `createProduct` chỉ định rằng nó chỉ chấp nhận các yêu cầu có thân (body) được định dạng là XML."
+  },
+  {
+    "id": 34,
+    "question_text": "Cho đoạn mã nguồn:\n@Path(\"/products\")\npublic class ProductResource {\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\tpublic Response getProducts() {\n\t\t// Get all products from the database.\n\t\treturn Response.ok(products).build();\n\t}\n\t@POST\n\t@Consumes(MediaType.APPLICATION_XML)\n\tpublic Response createProduct(Product product) {\n\t\t// Create a new product in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@PUT\n\t@Path(\"{id}\")\n\t@Consumes(MediaType.MULTIPART_FORM_DATA)\n\tpublic Response updateProduct(@PathParam(\"id\") long id, Product product) {\n\t\t// Update the product with the given ID in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@DELETE\n\t@Path(\"{id}\")\n\tpublic Response deleteProduct(@PathParam(\"id\") long id) {\n\t\t// Delete the product with the given ID from the database.\n\t\treturn Response.ok().build();\n\t}\n}\nHTTP Request nào sẽ được chuyển cho updateProduct () ?",
+    "options": {
+      "A": "Phương thức PUT, đường dẫn /products",
+      "B": "Phương thức PUT, đường dẫn /products/15",
+      "C": "Phương thức GET, đường dẫn /products/15",
+      "D": "Phương thức GET, đường dẫn /products"
+    },
+    "correct_answer": "B",
+    "explanation": "Phương thức `updateProduct` được chú thích với `@PUT` và `@Path(\"{id}\")`. Do đó, nó sẽ xử lý các yêu cầu HTTP có phương thức PUT và đường dẫn có dạng `/products/{id}`, ví dụ như `/products/15`."
+  },
+  {
+    "id": 35,
+    "question_text": "Cho đoạn mã nguồn:\n@Path(\"/products\")\npublic class ProductResource {\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\tpublic Response getProducts() {\n\t\t// Get all products from the database.\n\t\treturn Response.ok(products).build();\n\t}\n\t@POST\n\t@Consumes(MediaType.APPLICATION_XML)\n\tpublic Response createProduct(Product product) {\n\t\t// Create a new product in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@PUT\n\t@Path(\"{id}\")\n\t@Consumes(MediaType.MULTIPART_FORM_DATA)\n\tpublic Response updateProduct(@PathParam(\"id\") long id, Product product) {\n\t\t// Update the product with the given ID in the database.\n\t\treturn Response.ok().build();\n\t}\n\t@DELETE\n\t@Path(\"{id}\")\n\tpublic Response deleteProduct(@PathParam(\"id\") long id) {\n\t\t// Delete the product with the given ID from the database.\n\t\treturn Response.ok().build();\n\t}\n}\nPhương thức HTTP cho phương thức deleteProduct() là gì?",
+    "options": {
+      "A": "GET",
+      "B": "POST",
+      "C": "PUT",
+      "D": "DELETE"
+    },
+    "correct_answer": "D",
+    "explanation": "Phương thức `deleteProduct` được chú thích bằng `@DELETE`, chỉ định rằng nó sẽ xử lý các yêu cầu HTTP có phương thức là DELETE."
+  },
+  {
+    "id": 36,
+    "question_text": "Trong WSDL, một message có thể chứa các kiểu dữ liệu nào?",
+    "options": {
+      "A": "Dữ liệu nguyên thủy",
+      "B": "Complex Type",
+      "C": "Array Type",
+      "D": "Cả A và B"
+    },
+    "correct_answer": "D",
+    "explanation": "Một thông điệp (message) trong WSDL được tạo thành từ các phần (part), và mỗi phần có thể là một kiểu dữ liệu nguyên thủy (như string, int) hoặc một kiểu phức hợp (complexType) được định nghĩa trong XML Schema."
+  },
+  {
+    "id": 37,
+    "question_text": "Trong WSDL, phần PortType dùng để làm gì?",
+    "options": {
+      "A": "Chứa các thông tin bổ sung về message",
+      "B": "Chứa thông tin về tài nguyên của web service",
+      "C": "Định nghĩa các phương thức và kiểu dữ liệu",
+      "D": "Chứa các thư viện lập trình"
+    },
+    "correct_answer": "C",
+    "explanation": "`<portType>` là một phần tử quan trọng trong WSDL, nó định nghĩa một tập hợp các hoạt động (phương thức) trừu tượng mà một dịch vụ cung cấp, cùng với các thông điệp đầu vào và đầu ra của chúng."
+  },
+  {
+    "id": 38,
+    "question_text": "Cho định nghĩa WSDL:\n<wsdl:definitions ...>\n\t<wsdl:types>\n\t\t<xsd:schema ...>\n\t\t\t<xsd:element name=\"Customer\">\n\t\t\t\t<xsd:complexType>\n\t\t\t\t\t<xsd:sequence>\n\t\t\t\t\t\t<xsd:element name=\"CustomerId\" type=\"xsd:string\" minOccurs=\"1\" />\n\t\t\t\t\t\t<xsd:element name=\"CustomerName\" type=\"xsd:string\" minOccurs=\"1\" />\n\t\t\t\t\t</xsd:sequence>\n\t\t\t\t</xsd:complexType>\n\t\t\t</xsd:element>\n\t\t\t<xsd:element name=\"Charge\">...</xsd:element>\n \t\t\t<xsd:element name=\"ChargeResult\">...</xsd:element>\n\t\t</xsd:schema>\n\t</wsdl:types>\n\t...\n</wsdl:definitions>\nĐâu không phải là một phần tử phức ?",
+    "options": {
+      "A": "Customer",
+      "B": "CustomerId",
+      "C": "Charge",
+      "D": "ChargeResult"
+    },
+    "correct_answer": "B",
+    "explanation": "Các phần tử `Customer`, `Charge`, và `ChargeResult` đều được định nghĩa là `<xsd:complexType>`. `CustomerId` chỉ là một phần tử con bên trong `Customer` và có kiểu dữ liệu đơn giản là `xsd:string`, do đó nó không phải là phần tử phức."
+  },
+  {
+    "id": 39,
+    "question_text": "Cho định nghĩa WSDL:\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<definitions ...>\n\t<types>\n\t\t<xsd:schema ...>\n\t\t\t<xsd:element name=\"Account\">...</xsd:element>\n\t\t\t<xsd:element name=\"AccountResponse\">\n\t\t\t\t<xsd:complexType>\n\t\t\t\t\t<xsd:sequence>\n \t\t\t\t\t\t<xsd:element name=\"success\" type=\"xsd:boolean\"/>\n\t\t\t\t\t</xsd:sequence>\n\t\t\t\t</xsd:complexType>\n\t\t\t</xsd:element>\n\t\t</xsd:schema>\n\t</types>\n\t<message name=\"RegisterAccountResponse\">\n\t\t<part name=\"parameters\" element=\"tns:AccountResponse\"/>\n\t</message>\n\t...\n</definitions>\nThông tin nào được dịch vụ web trả về?",
+    "options": {
+      "A": "Tên người dùng",
+      "B": "Mật khẩu",
+      "C": "Thành công hay không",
+      "D": "Tên người dùng và mật khẩu"
+    },
+    "correct_answer": "C",
+    "explanation": "Thông điệp trả về là `RegisterAccountResponse`, trỏ đến phần tử `AccountResponse`. Phần tử này chứa một phần tử con duy nhất là `success` với kiểu dữ liệu `xsd:boolean`, tức là trả về giá trị đúng/sai (thành công/thất bại)."
+  },
+  {
+    "id": 40,
+    "question_text": "Cho định nghĩa WSDL:\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<definitions ...>\n\t<types>\n\t\t<xsd:schema ...>\n\t\t\t<xsd:element name=\"Account\">\n\t\t\t\t<xsd:complexType>\n\t\t\t\t\t<xsd:sequence>\n \t\t\t\t\t\t<xsd:element name=\"username\" type=\"xsd:string\"/>\n\t\t\t\t\t\t<xsd:element name=\"password\" type=\"xsd:string\"/>\n\t\t\t\t\t</xsd:sequence>\n\t\t\t\t</xsd:complexType>\n\t\t\t</xsd:element>\n\t\t\t<xsd:element name=\"AccountResponse\">\n\t\t\t\t<xsd:complexType>\n\t\t\t\t\t<xsd:sequence>\n\t\t\t\t\t\t<xsd:element name=\"success\" type=\"xsd:boolean\"/>\n\t\t\t\t\t</xsd:sequence>\n\t\t\t\t</xsd:complexType>\n\t\t\t</xsd:element>\n\t\t</xsd:schema>\n\t</types>\n\t...\n</definitions>\nĐâu không phải là một phần tử đơn ?",
+    "options": {
+      "A": "success",
+      "B": "username",
+      "C": "password",
+      "D": "Account"
+    },
+    "correct_answer": "D",
+    "explanation": "Các phần tử `success`, `username`, và `password` được định nghĩa với các kiểu dữ liệu đơn giản (`boolean`, `string`). Phần tử `Account` được định nghĩa là một `<xsd:complexType>` vì nó chứa các phần tử con khác, do đó nó là phần tử phức."
+  }
+]
