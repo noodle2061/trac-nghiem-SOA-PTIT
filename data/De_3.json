@@ -428,8 +428,8 @@
       "C": "Web System Definition Language",
       "D": "Web Service Definition Language"
     },
-    "correct_answer": "D",
-    "explanation": "WSDL là viết tắt của Web Service Definition Language (Ngôn ngữ Định nghĩa Dịch vụ Web)."
+    "correct_answer": "A",
+    "explanation": "WSDL là viết tắt của Web Service Description Language (Ngôn ngữ mô tả dịch vụ web) theo định nghĩa chuẩn của W3C."
   },
   {
     "id": 37,
