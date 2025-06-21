@@ -188,8 +188,8 @@
       "C": "Applying object-oriented design principles",
       "D": "Polymorphism"
     },
-    "correct_answer": "C",
-    "explanation": "Câu trả lời này là một lựa chọn bao quát. Việc áp dụng các nguyên tắc thiết kế hướng đối tượng nói chung (bao gồm cả đóng gói, đa hình,...) giúp tổ chức và quản lý logic nghiệp vụ phức tạp một cách hiệu quả."
+    "correct_answer": "A",
+    "explanation": "Tính đóng gói (Encapsulation) giúp che giấu sự phức tạp của logic nghiệp vụ bên trong một đối tượng và chỉ lộ ra các giao diện cần thiết, giúp mã nguồn dễ quản lý và bảo trì hơn."
   },
   {
     "id": 17,
