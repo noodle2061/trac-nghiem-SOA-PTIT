@@ -5,36 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ôn tập SOA PTIT</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Particles background -->
+    <div id="particles-background"></div>
 
     <!-- Giao diện chính để chọn đề thi -->
     <div id="topic-selection-view" class="container">
         <div class="header">
-            <h1>Danh Sách Đề Thi</h1>
+            <h1 class="animated-title">
+                <i class="fas fa-graduation-cap"></i>
+                Danh Sách Đề Thi SOA
+            </h1>
+            <div class="header-decoration"></div>
         </div>
 
-        <!-- Lời chào được thêm vào đây -->
+        <!-- Lời chào được thêm vào đây với gif con rùa -->
         <div class="welcome-message">
-            <p><strong>Xin chào mình là Rùa,</strong></p>
-            <p>Bộ đề này được mình và các bạn gom lại, vẫn còn có những câu có đáp án sai chưa được kiểm chứng (khoảng 90% câu trả lời đúng với bộ đáp án của thầy) và cũng còn thiếu khá nhiều câu hỏi, mọi đóng góp và ý kiến xin liên hệ tới Facebook của mình. Xin chân thành cảm ơn.</p>
+            <div class="welcome-content">
+                <div class="turtle-container">
+                    <div class="turtle-gif">
+                        🐢
+                    </div>
+                    <div class="speech-bubble">
+                        Xin chào! Mình là Rùa 🐢
+                    </div>
+                </div>
+                <div class="welcome-text">
+                    <p><strong>Bộ đề này được mình và các bạn gom lại,</strong> vẫn còn có những câu có đáp án sai chưa được kiểm chứng (khoảng 90% câu trả lời đúng với bộ đáp án của thầy) và cũng còn thiếu khá nhiều câu hỏi.</p>
+                    <p><i class="fas fa-heart text-red"></i> Mọi đóng góp và ý kiến xin liên hệ tới Facebook của mình. Xin chân thành cảm ơn!</p>
+                </div>
+            </div>
         </div>
 
-        <div id="topic-list" class="topic-grid">
-            <!-- Danh sách các đề thi sẽ được JavaScript chèn vào đây -->
+        <div class="topics-section">
+            <h2 class="section-title">
+                <i class="fas fa-book-open"></i>
+                Chọn đề thi để bắt đầu
+            </h2>
+            <div id="topic-list" class="topic-grid">
+                <!-- Danh sách các đề thi sẽ được JavaScript chèn vào đây -->
+            </div>
         </div>
     </div>
 
     <!-- Giao diện làm bài thi (ẩn ban đầu) -->
     <div id="quiz-view" class="container" style="display: none;">
         <div class="header">
-            <button id="back-btn" class="back-btn" title="Quay lại danh sách">&larr; Quay lại</button>
-            <h1 id="quiz-title"></h1>
+            <button id="back-btn" class="back-btn" title="Quay lại danh sách">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 id="quiz-title" class="quiz-title-animated"></h1>
             <!-- Các nút chọn chế độ được chuyển vào đây -->
             <div id="mode-selection-container" class="mode-selection-inline">
-                <button data-mode="preview" class="mode-btn preview">Xem trước</button>
-                <button data-mode="practice" class="mode-btn practice">Ôn tập</button>
-                <button data-mode="test" class="mode-btn test">Kiểm tra</button>
+                <button data-mode="preview" class="mode-btn preview">
+                    <i class="fas fa-eye"></i>
+                    <span>Xem trước</span>
+                </button>
+                <button data-mode="practice" class="mode-btn practice">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Ôn tập</span>
+                </button>
+                <button data-mode="test" class="mode-btn test">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Kiểm tra</span>
+                </button>
             </div>
             <p id="quiz-mode-text" class="quiz-mode-description"></p>
         </div>
@@ -45,8 +81,14 @@
             </div>
             
             <div id="controls-container" class="controls">
-                <button type="submit" id="submit-btn" class="submit-btn">Nộp Bài</button>
-                <button type="button" id="retry-btn" class="retry-btn" style="display: none;">Làm Lại</button>
+                <button type="submit" id="submit-btn" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Nộp Bài</span>
+                </button>
+                <button type="button" id="retry-btn" class="retry-btn" style="display: none;">
+                    <i class="fas fa-redo"></i>
+                    <span>Làm Lại</span>
+                </button>
             </div>
         </form>
 
@@ -55,8 +97,16 @@
     
     <!-- Nút làm mới nổi cho chế độ ôn tập -->
     <button id="floating-refresh-btn" class="floating-btn" title="Làm mới bài ôn tập" style="display: none;">
-        &#x21bb;
+        <i class="fas fa-sync-alt"></i>
     </button>
+
+    <!-- Loading animation -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Đang tải đề thi...</p>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
 </body>
