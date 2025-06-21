@@ -80,8 +80,8 @@
       "C": "Xác định giao diện của các dịch vụ",
       "D": "Xác định các thực thể kinh doanh cần dịch vụ hỗ trợ"
     },
-    "correct_answer": "B",
-    "explanation": "Trong quá trình phân tích, việc lựa chọn giữa REST và SOAP ảnh hưởng đến cách xác định ranh giới dịch vụ. REST thường phù hợp với các dịch vụ hướng tài nguyên, trong khi SOAP có thể phù hợp hơn với các dịch vụ hướng hành động phức tạp."
+    "correct_answer": "C",
+    "explanation": "Sự khác biệt cơ bản nhất giữa REST và SOAP nằm ở cách chúng định nghĩa giao diện. SOAP sử dụng một hợp đồng chính thức, chặt chẽ thông qua WSDL (Web Services Description Language) để mô tả mọi khía cạnh của dịch vụ. Ngược lại, REST sử dụng một cách tiếp cận linh hoạt hơn, định nghĩa giao diện thông qua các URI (để xác định tài nguyên) và các phương thức HTTP tiêu chuẩn (GET, POST, PUT, DELETE) để thực hiện hành động trên các tài nguyên đó."
   },
   {
     "id": 8,
